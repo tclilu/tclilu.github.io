@@ -165,7 +165,7 @@ ga('send', 'pageview');
 
 <p>该类继承了<code>com.xxl.job.core.executor.XxlJobExecutor</code>父类并实现了<code>Spring</code>的三个接口；我们在该类中未找属性对应的变异器，所以我们几乎可以断定这些属性是定义在父类中。</p>
 <p>我们来看父类的代码</p>
-<p><a href="https://i.loli.net/2020/02/15/Xg4kodaAcUKtLG9.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="XxlJobExecutor变异器.png" class="fancybox"><img alt="XxlJobExecutor变异器.png" title="XxlJobExecutor变异器.png" data-src="https://i.loli.net/2020/02/15/Xg4kodaAcUKtLG9.jpg" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/Xg4kodaAcUKtLG9.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="XxlJobExecutor变异器.png" class="fancybox"><img alt="XxlJobExecutor变异器.png" data-src="https://i.loli.net/2020/02/15/Xg4kodaAcUKtLG9.jpg" class="lazyload" title="XxlJobExecutor变异器.png"></a></p>
 <p>变异器只是单纯的把传入的值设置给对象，所以排除了第一种可能，情况只能是第二种：在<code>Spring</code>加载<code>bean</code>的过程中进行了逻辑处理。</p>
 <p>我们继续往下看父类<code>XxlJobExecutor</code>的代码，发现<code>start</code>方法中用到了这些属性，接下来我们来仔细阅读以下该方法的代码：</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; ---------------------- start + stop ----------------------</span><br><span class="line">public void start() throws Exception &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; init logpath</span><br><span class="line">    XxlJobFileAppender.initLogPath(logPath);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; init invoker, admin-client</span><br><span class="line">    initAdminBizList(adminAddresses, accessToken);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; init JobLogFileCleanThread</span><br><span class="line">    JobLogFileCleanThread.getInstance().start(logRetentionDays);</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; init TriggerCallbackThread</span><br><span class="line">    TriggerCallbackThread.getInstance().start();</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; init executor-server</span><br><span class="line">    port &#x3D; port&gt;0?port: NetUtil.findAvailablePort(9999);</span><br><span class="line">    ip &#x3D; (ip!&#x3D;null&amp;&amp;ip.trim().length()&gt;0)?ip: IpUtil.getIp();</span><br><span class="line">    initRpcProvider(ip, port, appName, accessToken);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
@@ -174,7 +174,7 @@ ga('send', 'pageview');
 <li><code>XxlJobFileAppender.initLogPath(logPath);</code></li>
 </ol>
 <p>从方法名来看显然是初始化日志存储路径，我们进入<code>XxlJobFileAppender</code>类查看<code>initLogPath(logPath)</code>方法，代码如下：</p>
-<p><a href="https://i.loli.net/2020/02/15/DswcF91RrLxi4Ca.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="XxlJobFileAppender_initLogPath.png" class="fancybox"><img alt="XxlJobFileAppender_initLogPath.png" title="XxlJobFileAppender_initLogPath.png" data-src="https://i.loli.net/2020/02/15/DswcF91RrLxi4Ca.jpg" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/DswcF91RrLxi4Ca.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="XxlJobFileAppender_initLogPath.png" class="fancybox"><img alt="XxlJobFileAppender_initLogPath.png" data-src="https://i.loli.net/2020/02/15/DswcF91RrLxi4Ca.jpg" class="lazyload" title="XxlJobFileAppender_initLogPath.png"></a></p>
 <p>我们可以看到静态成员变量<code>logBasePath</code>的值为<code>/data/applogs/xxl-job/jobhandler</code>，当<code>logPath</code>属性未配置时该路径即为日志存盘的默认路径。</p>
 <p>该方法的实现思路如下：</p>
 <ul>
@@ -187,7 +187,7 @@ ga('send', 'pageview');
 <li><code>initAdminBizList(adminAddresses, accessToken);</code></li>
 </ol>
 <p>从方法名来看该方法的作用是初始化调度中心部署根地址集合，其参数是配置项<code>adminAddresses</code>和<code>accessToken</code>的值。我们来看该方法的具体实现：</p>
-<p><a href="https://i.loli.net/2020/02/15/KANYOLTaBfeh3mx.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="initAdminBizList.png" class="fancybox"><img alt="initAdminBizList.png" title="initAdminBizList.png" data-src="https://i.loli.net/2020/02/15/KANYOLTaBfeh3mx.jpg" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/KANYOLTaBfeh3mx.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="initAdminBizList.png" class="fancybox"><img alt="initAdminBizList.png" data-src="https://i.loli.net/2020/02/15/KANYOLTaBfeh3mx.jpg" class="lazyload" title="initAdminBizList.png"></a></p>
 <p>该方法的实现思路如下：</p>
 <ul>
 <li>判断传入的配置项<code>adminAddresses</code>的值是否为<code>null</code>并且去除两端空格后的长度是否大于零。</li>
@@ -195,7 +195,7 @@ ga('send', 'pageview');
 <li>一切限制条件通过后开始创建<code>com.xxl.job.core.biz.client.AdminBizClient</code>类的对象，并添加至静态成员变量<code>adminBizList</code>集合中。这里是在第一次循环时才使用<code>new</code>关键字创建<code>ArrayList</code>集合对象，其思想是“懒加载”，用时才去创建对象。由于<code>Spring</code>的<code>bean</code>的默认作用域是单例的，所以保证了该初始化方法只会执行一次。</li>
 </ul>
 <p>我们来看一下<code>com.xxl.job.core.biz.client.AdminBizClient</code>类的构造方法：</p>
-<p><a href="https://i.loli.net/2020/02/15/on4UPLwMYal8jsm.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="AdminBizClient_AdminBizClient.png" class="fancybox"><img alt="AdminBizClient_AdminBizClient.png" title="AdminBizClient_AdminBizClient.png" data-src="https://i.loli.net/2020/02/15/on4UPLwMYal8jsm.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/on4UPLwMYal8jsm.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="AdminBizClient_AdminBizClient.png" class="fancybox"><img alt="AdminBizClient_AdminBizClient.png" data-src="https://i.loli.net/2020/02/15/on4UPLwMYal8jsm.png" class="lazyload" title="AdminBizClient_AdminBizClient.png"></a></p>
 <p>构造方法中对传入的<code>addressUrl</code>进行了简单的<code>valid</code>校验，如果不是以<code>/</code>结尾则将<code>/</code>拼接至末尾。此处可看出我们的<code>adminAddresses</code>配置实际会变成类似<code>http://127.0.0.1:8080/xxl-job-admin/</code>这样的字符串。至于该类对象什么时候使用我们暂时没有线索，大可先不关注这个。</p>
 <ol start="3">
 <li><code>JobLogFileCleanThread.getInstance().start(logRetentionDays);</code></li>
@@ -206,7 +206,7 @@ ga('send', 'pageview');
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">private static JobLogFileCleanThread instance &#x3D; new JobLogFileCleanThread();</span><br><span class="line">public static JobLogFileCleanThread getInstance() &#123;</span><br><span class="line">    return instance;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <p>这是“饿汉式”单例模式的写法，创建了单例的<code>JobLogFileCleanThread</code>对象。</p>
 <p>接下来看一下<code>start</code>方法：</p>
-<p><a href="https://i.loli.net/2020/02/15/V7KL4TDFZdYaqrj.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JobLogFileCleanThread_start.png" class="fancybox"><img alt="JobLogFileCleanThread_start.png" title="JobLogFileCleanThread_start.png" data-src="https://i.loli.net/2020/02/15/V7KL4TDFZdYaqrj.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/V7KL4TDFZdYaqrj.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JobLogFileCleanThread_start.png" class="fancybox"><img alt="JobLogFileCleanThread_start.png" data-src="https://i.loli.net/2020/02/15/V7KL4TDFZdYaqrj.png" class="lazyload" title="JobLogFileCleanThread_start.png"></a></p>
 <p>首先第一步检查设置的<code>logRetentionDays</code>属性是否小于<code>3</code>，小于则直接<code>return</code>；这里说明了配置文件中的值设置小于<code>3</code>时关闭日志自动清理功能。</p>
 <p>该方法中实例化了成员变量<code>private Thread localThread;</code>，调用了<code>setDaemon(true)</code>方法将该线程设置为守护线程，并调用<code>setName</code>方法将线程名设为了<code>xxl-job, executor JobLogFileCleanThread</code>。</p>
 <p>线程中运行的<code>run</code>方法逻辑大致如下：</p>
@@ -226,13 +226,13 @@ ga('send', 'pageview');
 <p>如果配置文件中设置的端口号大于零，则使用配置文件中的值；</p>
 <p>否则执行代码<code>NetUtil.findAvailablePort(9999);</code>，我们进入<code>NetUtil</code>类查看<code>findAvailablePort</code>方法，发现这个类属于<code>com.xxl.rpc.util</code>包，可见，<code>xxl-job</code>依赖了<code>xxl-rpc</code>（这是作者许雪里开源的<code>rpc</code>框架）。</p>
 <p>从方法名来看作用是“寻找可用端口”，我们来看一下<code>findAvailablePort</code>方法的具体实现逻辑：</p>
-<p><a href="https://i.loli.net/2020/02/15/Y6MigAsaEbWwLxv.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="NetUtil_findAvailablePort.png" class="fancybox"><img alt="NetUtil_findAvailablePort.png" title="NetUtil_findAvailablePort.png" data-src="https://i.loli.net/2020/02/15/Y6MigAsaEbWwLxv.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/Y6MigAsaEbWwLxv.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="NetUtil_findAvailablePort.png" class="fancybox"><img alt="NetUtil_findAvailablePort.png" data-src="https://i.loli.net/2020/02/15/Y6MigAsaEbWwLxv.png" class="lazyload" title="NetUtil_findAvailablePort.png"></a></p>
 <ul>
 <li>传入的<code>9999</code>作为默认端口，首先循环<code>9999</code>到<code>65534</code>端口，逐个进行<code>!isPortUsed(portTmp)</code>判断，如果返回<code>true</code>则表示当前端口号未被使用，返回赋值给属性<code>port</code>。</li>
 <li>如果上述循环未找到可使用的端口，则再循环<code>9999</code>到<code>1</code>端口，同样逐个进行<code>!isPortUsed(portTmp)</code>判断，如果还未找到可用端口，则抛出<code>XxlRpcException</code>异常，异常信息为<code>no available port.</code>。</li>
 </ul>
 <p>我们来看一下<code>isPortUsed</code>方法是如何判断端口是否被使用的：</p>
-<p><a href="https://i.loli.net/2020/02/15/jy9bL4ZIrwB7shd.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="NetUtil_isPortUsed.png" class="fancybox"><img alt="NetUtil_isPortUsed.png" title="NetUtil_isPortUsed.png" data-src="https://i.loli.net/2020/02/15/jy9bL4ZIrwB7shd.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/jy9bL4ZIrwB7shd.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="NetUtil_isPortUsed.png" class="fancybox"><img alt="NetUtil_isPortUsed.png" data-src="https://i.loli.net/2020/02/15/jy9bL4ZIrwB7shd.png" class="lazyload" title="NetUtil_isPortUsed.png"></a></p>
 <p>实际是尝试去创建一个<code>ServerSocket</code>客户端并与传入的端口号进行绑定，如端口被占用则绑定时会抛出<code>IOException</code>，由此来确定端口是否被使用，从而在未配置端口号时选出一个可用端口。最终<code>finally</code>代码块中调用了<code>close</code>方法关闭资源。</p>
 <ol start="6">
 <li><code>ip = (ip!=null&amp;&amp;ip.trim().length()&gt;0)?ip: IpUtil.getIp();</code></li>

@@ -249,7 +249,7 @@ ga('send', 'pageview');
 <li>并行流的底层实现是Fork/Join框架。它是基于多线程的，线程之间进行上下文切换需要耗时。同时线程是操作系统进行调度的。线程自己无法控制时间。</li>
 </ol>
 <h3 id="Fork-Join框架"><a href="#Fork-Join框架" class="headerlink" title="Fork/Join框架"></a>Fork/Join框架</h3><p>Fork/Join框架是Java 7提供的一个用于并行执行任务的框架，是一个把大任务分割成若干个小任务，最终汇总每个小任务结果后得到大任务结果的框架。体现了分治法的思想。Fork的意思是拆分，Join的意思是合并。比如计算1+2+…+10000，可以分割成10个子任务，每个子任务分别对1000个数进行求和， 最终汇总这10个子任务的结果。Fork/Join框架的运行流程图如下：</p>
-<p><a href="https://i.loli.net/2020/02/15/4YvPn3qOA8BeKtw.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="Fork-Join.png" class="fancybox"><img alt="Fork-Join.png" title="Fork-Join.png" data-src="https://i.loli.net/2020/02/15/4YvPn3qOA8BeKtw.jpg" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/4YvPn3qOA8BeKtw.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption="Fork-Join.png" class="fancybox"><img alt="Fork-Join.png" data-src="https://i.loli.net/2020/02/15/4YvPn3qOA8BeKtw.jpg" class="lazyload" title="Fork-Join.png"></a></p>
 <p>Fork/Join的拆分重点在于任务什么时候足够小或不可分，不可再拆分的任务顺序执行，不同的任务之间并行执行。所有不可拆分的子任务分配到多个任务队列中等待线程去执行，每个队列都有一个单独的线程去执行任务。理想情况下，划分并行任务时，应该让每个任务都用相同的时间完成，让所有的CPU都同样繁忙，充分的利用CPU。但实际中，由于线程是由操作系统根据时间片进行调度的，每个子任务所花的时间可能天差地别。于是会出现一个任务队列的任务全部执行完了，另一个队列中还有很多任务的情况。这个时候CPU的利用率没有最大化。Java 8采用工作窃取算法来解决这一问题。</p>
 <h3 id="工作窃取（work-stealing）算法"><a href="#工作窃取（work-stealing）算法" class="headerlink" title="工作窃取（work-stealing）算法"></a>工作窃取（work-stealing）算法</h3><p>工作窃取算法是指某个线程从其它队列中窃取任务来执行。某个线程，自己队列中的任务执行完了，就去别的还有任务的队列中窃取一个任务来执行。这个时候会存在线程竞争关系，窃取线程和被窃取线程之间同时访问同一个队列。通常使用双端队列来解决。被窃取任务线程永远从双端队列的头部拿任务执行，而窃取任务的线程永远从双端队列的尾部拿任务执行。</p>
 <h4 id="工作窃取算法的优点："><a href="#工作窃取算法的优点：" class="headerlink" title="工作窃取算法的优点："></a>工作窃取算法的优点：</h4><p>充分利用线程进行并行计算，减少了线程间的竞争。</p>

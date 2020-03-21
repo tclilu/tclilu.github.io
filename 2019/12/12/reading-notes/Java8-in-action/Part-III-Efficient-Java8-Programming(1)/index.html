@@ -129,7 +129,7 @@ ga('send', 'pageview');
 <li>接口<code>InterfaceB</code>继承了接口<code>InterfaceA</code>，同时提供自己的默认<code>hello</code>方法。</li>
 <li>实现类<code>ImplClassC</code>实现<code>InterfaceA</code>接口和<code>InterfaceB</code>接口，没有显式实现<code>hello</code>方法。</li>
 </ul>
-<p><a href="https://i.loli.net/2020/02/15/WIXnvM6jawk92zU.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case1.png" class="fancybox"><img alt="9-case1.png" title="9-case1.png" data-src="https://i.loli.net/2020/02/15/WIXnvM6jawk92zU.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/WIXnvM6jawk92zU.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case1.png" class="fancybox"><img alt="9-case1.png" data-src="https://i.loli.net/2020/02/15/WIXnvM6jawk92zU.png" class="lazyload" title="9-case1.png"></a></p>
 <p>接口<code>InterfaceB</code>继承了<code>InterfaceA</code>，接口<code>InterfaceB</code>中的<code>hello</code>方法更具体，所以实现类<code>ImplClassC</code>拥有的是<code>InterfaceB</code>接口中的<code>hello</code>方法。</p>
 <h4 id="情形二"><a href="#情形二" class="headerlink" title="情形二"></a>情形二</h4><ul>
 <li>接口<code>InterfaceA</code>中定义了默认方法<code>hello</code>。</li>
@@ -137,7 +137,7 @@ ga('send', 'pageview');
 <li>实现类<code>ImplClassD</code>实现<code>InterfaceA</code>接口，未显式重写接口的<code>hello</code>方法。</li>
 <li>实现类<code>ImplClassC</code>继承<code>ImplClassD</code>类，同时实现<code>InterfaceA</code>和<code>InterfaceB</code>接口，没有显式实现<code>hello</code>方法。</li>
 </ul>
-<p><a href="https://i.loli.net/2020/02/15/e4NTXoVklfH18B3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case2.png" class="fancybox"><img alt="9-case2.png" title="9-case2.png" data-src="https://i.loli.net/2020/02/15/e4NTXoVklfH18B3.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/e4NTXoVklfH18B3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case2.png" class="fancybox"><img alt="9-case2.png" data-src="https://i.loli.net/2020/02/15/e4NTXoVklfH18B3.png" class="lazyload" title="9-case2.png"></a></p>
 <p><code>ImplClassC</code>和<code>ImplClassD</code>类中都未实现<code>hello</code>方法，<code>InterfaceB</code>继承<code>InterfaceA</code>接口，所以<code>InterfaceB</code>接口中的方法更具体，所以<code>ImplClassC</code>类具有的是<code>InterfaceB</code>中的<code>hello</code>方法。</p>
 <h4 id="情形三"><a href="#情形三" class="headerlink" title="情形三"></a>情形三</h4><ul>
 <li>接口<code>InterfaceA</code>中定义了默认方法<code>hello</code>。</li>
@@ -145,14 +145,14 @@ ga('send', 'pageview');
 <li>实现类<code>ImplClassD</code>实现了<code>InterfaceA</code>接口，并显式重写了接口的<code>hello</code>方法。</li>
 <li>实现类<code>ImplClassC</code>继承了<code>ImplClassD</code>实现类，并实现了<code>InterfaceA</code>和<code>InterfaceB</code>接口，没有显式实现<code>hello</code>方法。</li>
 </ul>
-<p><a href="https://i.loli.net/2020/02/15/XTn2dPVH6ycYmDJ.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case3.png" class="fancybox"><img alt="9-case3.png" title="9-case3.png" data-src="https://i.loli.net/2020/02/15/XTn2dPVH6ycYmDJ.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/XTn2dPVH6ycYmDJ.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case3.png" class="fancybox"><img alt="9-case3.png" data-src="https://i.loli.net/2020/02/15/XTn2dPVH6ycYmDJ.png" class="lazyload" title="9-case3.png"></a></p>
 <p><code>ImplClassC</code>和<code>ImplClassD</code>类中都未实现<code>hello</code>方法，<code>InterfaceB</code>继承<code>InterfaceA</code>接口，所以<code>InterfaceB</code>接口中的方法更具体，所以<code>ImplClassC</code>类具有的是<code>InterfaceB</code>中的<code>hello</code>方法。</p>
 <h4 id="情形四"><a href="#情形四" class="headerlink" title="情形四"></a>情形四</h4><ul>
 <li>接口<code>InterfaceA</code>中定义了默认方法<code>hello</code>。</li>
 <li>接口<code>InterfaceB</code>中定义了默认方法<code>hello</code>，未继承。</li>
 <li>实现类<code>ImplClassC</code>实现<code>InterfaceA</code>和<code>InterfaceB</code>接口。</li>
 </ul>
-<p><a href="https://i.loli.net/2020/02/15/mPzwXtpCIKxqLea.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case4.png" class="fancybox"><img alt="9-case4.png" title="9-case4.png" data-src="https://i.loli.net/2020/02/15/mPzwXtpCIKxqLea.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/mPzwXtpCIKxqLea.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case4.png" class="fancybox"><img alt="9-case4.png" data-src="https://i.loli.net/2020/02/15/mPzwXtpCIKxqLea.png" class="lazyload" title="9-case4.png"></a></p>
 <p>如果实现类<code>ImplClassC</code>不重写<code>hello</code>方法，编译器会抛出编译错误：<br><code>ImplClassC inherits unrelated defaults for hello() from types InterfaceA and InterfaceB</code>。</p>
 <p>可以直接在实现类中重新写一个<code>hello</code>方法的实现，也可以使用<code>super</code>关键字调用父接口的默认实现。</p>
 <h4 id="情形五"><a href="#情形五" class="headerlink" title="情形五"></a>情形五</h4><ul>
@@ -161,7 +161,7 @@ ga('send', 'pageview');
 <li>接口<code>InterfaceC</code>继承了接口<code>InterfaceA</code>，未提供任何方法。</li>
 <li>实现类<code>ImplClassD</code>实现<code>InterfaceB</code>和<code>InterfaceC</code>接口。</li>
 </ul>
-<p><a href="https://i.loli.net/2020/02/15/DcACmO42doKHy8q.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case5.png" class="fancybox"><img alt="9-case5.png" title="9-case5.png" data-src="https://i.loli.net/2020/02/15/DcACmO42doKHy8q.png" class="lazyload"></a></p>
+<p><a href="https://i.loli.net/2020/02/15/DcACmO42doKHy8q.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="9-case5.png" class="fancybox"><img alt="9-case5.png" data-src="https://i.loli.net/2020/02/15/DcACmO42doKHy8q.png" class="lazyload" title="9-case5.png"></a></p>
 <p><code>InterfaceB</code>和<code>InterfaceC</code>接口中都没有<code>hello</code>实现，它们的父接口<code>InterfaceA</code>中才有<code>hello</code>的默认实现，所以实现类<code>ImplClassD</code>拥有接口<code>InterfaceA</code>中<code>hello</code>方法。</p>
 <h4 id="情形五扩展"><a href="#情形五扩展" class="headerlink" title="情形五扩展"></a>情形五扩展</h4><p>如果<code>InterfaceB</code>中也提供<code>hello</code>默认实现，根据规则第二点，编译器会选择<code>InterfaceB</code>中声明的默认方法。</p>
 <p>如果<code>InterfaceB</code>和<code>InterfaceC</code>都提供<code>hello</code>默认实现，就会出现冲突，<code>ImplClassD</code>实现类必须实现<code>hello</code>方法。</p>
