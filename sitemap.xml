@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lilu.org.cn/2020/04/26/javase/base/randomaccess/</loc>
+    
+    <lastmod>2020-04-26T08:42:54.076Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/</loc>
+    
+    <lastmod>2020-04-26T05:44:08.624Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/04/26/javase/base/cloneable/</loc>
+    
+    <lastmod>2020-04-26T05:38:26.999Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/03/21/javase/base/serializable/</loc>
     
     <lastmod>2020-03-21T02:19:29.047Z</lastmod>

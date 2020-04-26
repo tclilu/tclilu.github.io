@@ -1,3 +1,6 @@
+https://lilu.org.cn/2020/04/26/javase/base/randomaccess/
+https://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/
+https://lilu.org.cn/2020/04/26/javase/base/cloneable/
 https://lilu.org.cn/2020/03/21/algorithm/coding-interview-guide/arraysandmatrices/solution01/
 https://lilu.org.cn/2020/03/21/javase/base/serializable/
 https://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/
