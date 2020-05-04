@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/abstract-collection/</loc>
+    
+    <lastmod>2020-05-04T17:54:49.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/collection/</loc>
+    
+    <lastmod>2020-05-04T17:52:46.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/list/</loc>
+    
+    <lastmod>2020-05-04T17:52:46.113Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/05/02/javase/base/arraylist/</loc>
     
-    <lastmod>2020-05-02T14:12:43.948Z</lastmod>
+    <lastmod>2020-05-04T17:51:23.026Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2019/12/13/java-bucket/</loc>
+    
+    <lastmod>2020-05-03T04:12:23.731Z</lastmod>
     
   </url>
   
@@ -110,13 +138,6 @@
     <loc>https://lilu.org.cn/2020/02/19/docker/create-mysql-container/</loc>
     
     <lastmod>2020-03-21T01:55:26.498Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/2019/12/13/java-bucket/</loc>
-    
-    <lastmod>2020-03-03T13:56:42.004Z</lastmod>
     
   </url>
   

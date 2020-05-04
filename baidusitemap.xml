@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/abstract-collection/</loc>
+    <lastmod>2020-05-04</lastmod>
+  </url>  <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/collection/</loc>
+    <lastmod>2020-05-04</lastmod>
+  </url>  <url>
+    <loc>https://lilu.org.cn/2020/05/05/javase/base/list/</loc>
+    <lastmod>2020-05-04</lastmod>
+  </url>  <url>
     <loc>https://lilu.org.cn/2020/05/02/javase/base/arraylist/</loc>
-    <lastmod>2020-05-02</lastmod>
+    <lastmod>2020-05-04</lastmod>
+  </url>  <url>
+    <loc>https://lilu.org.cn/2019/12/13/java-bucket/</loc>
+    <lastmod>2020-05-03</lastmod>
   </url>  <url>
     <loc>https://lilu.org.cn/2020/04/26/javase/base/randomaccess/</loc>
     <lastmod>2020-05-02</lastmod>
@@ -48,9 +60,6 @@
   </url>  <url>
     <loc>https://lilu.org.cn/2020/02/19/docker/create-mysql-container/</loc>
     <lastmod>2020-03-21</lastmod>
-  </url>  <url>
-    <loc>https://lilu.org.cn/2019/12/13/java-bucket/</loc>
-    <lastmod>2020-03-03</lastmod>
   </url>  <url>
     <loc>https://lilu.org.cn/2020/02/07/installed/install-idea/</loc>
     <lastmod>2020-02-27</lastmod>
