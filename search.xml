@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title>404</title>
-      <link href="/2020/05/05/404/"/>
-      <url>/2020/05/05/404/</url>
-      
-        <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"><title>向日葵不见了</title><meta name="viewpoint" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/assets/css/404.css" /><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="向日葵的自我修养" type="application/atom+xml"></head><body><div class="code"><p>您要找的向日葵不见了</p></div><div class="road"><div class="shadow"><div class="shelt"><div class="head"><div class="eyes"><div class="lefteye"><div class="eyeball"></div><div class="eyebrow"></div></div><div class="righteye"><div class="eyeball"></div><div class="eyebrow"></div></div></div></div></div><div class="hat"></div><div class="bubble"><a href="/">返 回 地 球?</a></div></div><p>PAGE NOT FOUND</p></div></body><script type="text/javascript" src="js/404.js" ></script></html>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JDK源码解析之AbstractCollection</title>
       <link href="/2020/05/05/javase/base/abstract-collection/"/>
       <url>/2020/05/05/javase/base/abstract-collection/</url>

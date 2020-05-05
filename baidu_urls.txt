@@ -1,4 +1,3 @@
-https://lilu.org.cn/2020/05/05/404/
 https://lilu.org.cn/2020/05/05/javase/base/abstract-collection/
 https://lilu.org.cn/2020/05/05/javase/base/list/
 https://lilu.org.cn/2020/05/05/javase/base/collection/
