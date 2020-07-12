@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</loc>
+    
+    <lastmod>2020-07-12T13:31:14.079Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/</loc>
+    
+    <lastmod>2020-07-12T13:31:14.065Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/about/index.html</loc>
+    
+    <lastmod>2020-07-06T03:54:26.100Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/06/29/javase/base/string/</loc>
     
     <lastmod>2020-06-29T03:21:45.000Z</lastmod>
@@ -152,13 +173,6 @@
     <loc>https://lilu.org.cn/link/index.html</loc>
     
     <lastmod>2020-02-25T11:24:09.419Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/about/index.html</loc>
-    
-    <lastmod>2020-02-25T11:24:09.410Z</lastmod>
     
   </url>
   
