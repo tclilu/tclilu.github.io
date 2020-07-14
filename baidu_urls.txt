@@ -1,3 +1,4 @@
+https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/
 https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/
 https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/
 https://lilu.org.cn/2020/06/29/javase/base/string/

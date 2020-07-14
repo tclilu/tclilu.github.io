@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/</loc>
+    <lastmod>2020-07-14</lastmod>
+  </url>  <url>
+    <loc>https://lilu.org.cn/2020/03/21/algorithm/coding-interview-guide/arraysandmatrices/solution01/</loc>
+    <lastmod>2020-07-14</lastmod>
+  </url>  <url>
     <loc>https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</loc>
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
@@ -48,9 +54,6 @@
   </url>  <url>
     <loc>https://lilu.org.cn/2020/04/26/javase/base/cloneable/</loc>
     <lastmod>2020-04-26</lastmod>
-  </url>  <url>
-    <loc>https://lilu.org.cn/2020/03/21/algorithm/coding-interview-guide/arraysandmatrices/solution01/</loc>
-    <lastmod>2020-03-21</lastmod>
   </url>  <url>
     <loc>https://lilu.org.cn/2020/03/21/javase/base/serializable/</loc>
     <lastmod>2020-03-21</lastmod>
