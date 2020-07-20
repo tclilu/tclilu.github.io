@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lilu.org.cn/"/>
-  <updated>2020-07-14T14:44:52.041Z</updated>
+  <updated>2020-07-20T14:33:59.593Z</updated>
   <id>https://lilu.org.cn/</id>
   
   <author>
@@ -15,6 +15,98 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>回收前的自救</title>
+    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/"/>
+    <id>https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/</id>
+    <published>2020-07-20T14:32:36.931Z</published>
+    <updated>2020-07-20T14:33:59.593Z</updated>
+    
+    <content type="html"><![CDATA[<p>即使在可达性分析算法中被判定为不可达的对象，也不是“非死不可”的，还有一种自救的方法。</p><p>要宣告一个对象已死，至少要经历两次标记过程：在被可达性分析算法判定为不可达后会被标记一次；随后会对不可达对象进行筛选，筛选条件是该对象是否有必要执行<code>finalize()</code>方法，如果对象没有重写<code>finalize()</code>方法，或者<code>finalize()</code>在上一次垃圾回收时被调用过，则该对象没有必要执行<code>finalize()</code>方法，会被第二次标记。对象即被判定为了“死亡”。</p><p>如果对象被判定为有必要执行<code>finalize()</code>方法，虚拟机会将该对象放置在一个名为<code>F-Queue</code>的队列之中，并在稍后由一个由虚拟机自动创建的、低调度优先级的<code>Finalizer</code>线程去执行它们的<code>finalize()</code>方法。这里的执行是虚拟机会触发该方法的开始执行，但不会等待它们执行结束。原因是该方法的方法体是经过重写的，无法保证立刻执行结束（等待或死循环的情况），很可能造成<code>F-Queue</code>队列中的其它对象永远处于等待状态，导致整个垃圾回收系统崩溃。</p><p><code>finalize()</code>方法是对象逃离死亡的最后一次机会，触发执行后，垃圾收集器将对<code>F-Queue</code>队列中的对象进行第二次小规模标记，如果对象要在<code>finalize()</code>方法中拯救自己——只需重新与引用链上的任何一个对象建立关联即可，例如将自身（<code>this</code>）赋值给某个类变量或者某个对象的成员变量，那在下一次垃圾回收时该对象将被移出“即将回收”的集合；如果该对象此时还未逃脱，那基本可以说它已经“死了”。</p><p>对象自救代码演示：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FinalizeEscapeGc</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> FinalizeEscapeGc SAVE_HOOK = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">isAlive</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"alive"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.finalize();</span><br><span class="line">        System.out.println(<span class="string">"finalize"</span>);</span><br><span class="line">        <span class="comment">// 将this赋值给当前类的静态变量进行自救</span></span><br><span class="line">        FinalizeEscapeGc.SAVE_HOOK = <span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        SAVE_HOOK = <span class="keyword">new</span> FinalizeEscapeGc();</span><br><span class="line">        <span class="comment">// 第一次会进行自救</span></span><br><span class="line">        SAVE_HOOK = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">        <span class="comment">// Finalizer线程优先级较低，暂停0.5秒以等待它</span></span><br><span class="line">        Thread.sleep(<span class="number">500</span>);</span><br><span class="line">        <span class="keyword">if</span> (SAVE_HOOK != <span class="keyword">null</span>) &#123;</span><br><span class="line">            SAVE_HOOK.isAlive();</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"dead"</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第二次被判定为“死亡”</span></span><br><span class="line">        SAVE_HOOK = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">        <span class="comment">// Finalizer线程优先级较低，暂停0.5秒以等待它</span></span><br><span class="line">        Thread.sleep(<span class="number">500</span>);</span><br><span class="line">        <span class="keyword">if</span> (SAVE_HOOK != <span class="keyword">null</span>) &#123;</span><br><span class="line">            SAVE_HOOK.isAlive();</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"dead"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出结果：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">finalize</span><br><span class="line">alive</span><br><span class="line">dead</span><br></pre></td></tr></table></figure><p>可看到<code>finalize()</code>方法被执行了，且第一次“自救成功”，第二次则彻底“死亡”。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      对象“死亡”前的最后一次挣扎，finalize()方法进行自救。
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>何为引用</title>
+    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/"/>
+    <id>https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/</id>
+    <published>2020-07-20T14:31:38.491Z</published>
+    <updated>2020-07-20T14:33:18.606Z</updated>
+    
+    <content type="html"><![CDATA[<p>无论是通过引用计数算法还是通过可达性分析算法判断对象是否存活都离不开“引用”这个概念，那到底什么是“引用”呢？</p><p><code>Java</code>语言中狭隘的“引用”定义是：如果<code>Reference</code>类型的数据中存储的数值代表的是另一块内存区域的起始地址，就称该<code>Reference</code>数据是代表某块内存（某个对象）的引用。在这种定义下，一个对象只存在两种状态：“被引用”/“未被引用”。这样的定义很严谨，但却缺少了一点灵活的空间，就像这个社会一样，不是所有人都值得活着，那些人民子弟兵值得永远存在，但那些犯罪的恶徒多活一秒都是对社会的污染。在<code>Java</code>中也是一样，堆上的对象不是所有的都是必须的，当内存空间出现紧张时，一些对象将会被抛弃。</p><p>在<code>JDK 1.2</code>版本后，<code>Java</code>中的引用分为四种类型：强引用（<code>Strongly Reference</code>）、软引用（<code>Soft Reference</code>）、弱引用（<code>Weak Reference</code>）和虚引用（<code>Phantom Reference</code>），这四种引用强度依次减弱。</p><ol><li>强引用（<code>Strongly Reference</code>）</li></ol><p>强引用是狭隘的引用定义，被引用的对象只会出现两种状态：“被引用”和“未被引用”。这种引用关系很常见，即类似于<code>Object obj = new Object()</code>这种直接赋值的，只要强引用关系还在，堆内的对象就永远不会被回收。</p><ol start="2"><li>软引用（<code>Soft Reference</code>）</li></ol><p>软引用描述的是还有用，但不是必须的一类对象。只被软引用关联着的对象在虚拟机将要发生内存溢出前，会将这类对象列进回收范围之中进行二次回收，如果将它们回收完成后内存还是不足，才会抛出内存溢出异常。<code>Java</code>中提供<code>SoftReference</code>类实现软引用。</p><ol start="3"><li>弱引用（<code>Weak Reference</code>）</li></ol><p>弱引用描述的也是那些非必须对象，但它的强度比软引用要弱一点，被弱引用关联着的对象只能活到下一次垃圾回收发生的时刻。当垃圾回收开始工作时，无论内存是否充足，都会回收掉弱引用的对象。<code>Java</code>中提供了<code>WeakReference</code>类实现弱引用。</p><ol start="4"><li>虚引用（<code>Phantom Reference</code>）</li></ol><p>虚引用是最弱的一种引用关系，一个对象是否有虚引用的存在，完全不会影响该对象的生存周期，也无法通过虚引用得到一个实例对象。为一个对象设置虚引用关联的唯一目的只是为了能在这个对象被垃圾回收时收到一个系统通知。<code>Java</code>中提供了<code>PhantomReference</code>类实现虚引用。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      何为引用？
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对象是“生”是“死”</title>
+    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/"/>
+    <id>https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/</id>
+    <published>2020-07-20T14:30:18.987Z</published>
+    <updated>2020-07-20T14:34:12.566Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>垃圾收集器对堆内存进行回收时，首先要判断堆中的对象是否还存活。</p><p>对象是“生存”还是“死亡”？这是一个问题。经典的判断算法是引用计数法，但存在一定缺陷。现代虚拟机是通过可达性分析算法判断对象是否存活。</p><h2 id="引用计数算法"><a href="#引用计数算法" class="headerlink" title="引用计数算法"></a>引用计数算法</h2><p>引用计数法是一个很好理解的算法。在对象中添加一个引用计数器，每当有一个引用指向该对象时，就将计数器值加一；当引用失效时，计数器值减一。任何时刻计数器值为零的对象可认为是“死亡”的。</p><p>一切都看似很正常，但实际上存在循环引用的问题。请看以下代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReferenceCountingGc</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> Object instance;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">byte</span>[] bigSize = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">2</span> * <span class="number">1024</span> * <span class="number">1024</span>];</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testGc</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ReferenceCountingGc objA = <span class="keyword">new</span> ReferenceCountingGc();</span><br><span class="line">        ReferenceCountingGc objB = <span class="keyword">new</span> ReferenceCountingGc();</span><br><span class="line">        objA.instance = objB;</span><br><span class="line">        objB.instance = objA;</span><br><span class="line">        objA = <span class="keyword">null</span>;</span><br><span class="line">        objB = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        testGc();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>分析：<code>testGc()</code>方法被调用时，<code>JVM</code>同步创建一个栈帧压入当前执行线程的虚拟机栈中，随后，虚拟机栈中存在两个引用<code>objA</code>和<code>objB</code>分别指向堆内的两个<code>new ReferenceCountingGc()</code>对象，然后，堆内两个对象的成员变量<code>instance</code>互相指向对方，再然后，将虚拟机栈内的引用指向<code>null</code>，最后触发<code>gc</code>。此时，堆内的这两个对象互相引用着对方，引用计数器的值不为零，但它们已经无法再由程序进行访问了，所以如果采用引用计数算法进行垃圾回收，这两个对象将无法被回收，即会出现内存泄露问题。</p><h2 id="可达性分析算法"><a href="#可达性分析算法" class="headerlink" title="可达性分析算法"></a>可达性分析算法</h2><p>现代标准虚拟机都是采用可达性分析算法判断对象是否存活。基本思路是通过一系列称为<code>GC Roots</code>的根对象作为起始节点集，从这些节点开始，根据引用关系向下搜索，搜索过程所走过的路径称为“引用链”，如果某个对象到<code>GC Roots</code>间没有任何引用链相连，则称该对象是不可达的，即需要被回收。</p><p>在<code>Java</code>技术体系里，固定可作为<code>GC Roots</code>的对象包括以下几种：</p><ul><li>在虚拟机栈（栈帧中的局部变量表）中引用的对象，例如各个线程被调用的方法堆栈中使用到的参数、局部变量、临时变量等。</li><li>在方法区中类静态属性引用的对象，即一个<code>Java</code>类的引用类型静态变量。</li><li>在方法区中常量引用的对象，例如字符串常量池中的引用。</li><li>在本地方法栈中本地<code>Native</code>方法引用的对象。</li><li>虚拟机内部的引用，例如基本数据类型对应的<code>Class</code>对象；一些常驻的异常类对象，例如<code>NullPointException</code>和<code>OutOfMemoryError</code>等，另外还有系统类加载器类对象。</li><li>所有被同步锁（<code>synchronized</code>）持有的对象。</li><li>反应虚拟机内部情况的<code>JMXBean</code>、<code>JVMTI</code>中注册的回调和本地代码缓存等。</li></ul><p>以上是固定作为<code>GC Roots</code>节点集的对象，但虚拟机还会根据所选垃圾收集器和当前进行垃圾回收的内存区域，可以将一些其它对象“临时性”地加入节点集，共同组成完整的<code>GC Roots</code>集合，确保可达性分析的正确性。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      对象是“生”还是“死”？这是一个问题。
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java虚拟机是如何运行字节码的</title>
+    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/run-class/"/>
+    <id>https://lilu.org.cn/2020/07/20/javase/jvm/run-class/</id>
+    <published>2020-07-20T14:29:07.358Z</published>
+    <updated>2020-07-20T14:29:51.895Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="为什么Java程序要在虚拟机上运行？"><a href="#为什么Java程序要在虚拟机上运行？" class="headerlink" title="为什么Java程序要在虚拟机上运行？"></a>为什么<code>Java</code>程序要在虚拟机上运行？</h2><p><code>Java</code>程序的运行离不开<code>Java</code>运行时环境，又称为<code>JRE</code>，它是<code>Java</code>程序的最小可运行环境，包含<code>Java</code>虚拟机和<code>Java</code>的核心类库。我们每天都在接触的<code>JDK</code>实际上就包含了<code>JRE</code>，同时在<code>/bin</code>目录下还有一些其它的小工具等。</p><p>它们的范围大小比较关系是：<code>JDK</code> &gt; <code>JRE</code> &gt; <code>JVM</code>。</p><p>对于虚拟机来说，它所能运行的是以<code>.class</code>结尾的字节码文件，我们平时写的<code>.java</code>源文件都需要经过编译器编译成字节码。</p><p>通俗一点说，虚拟机只认字节码，不管你是不是<code>Java</code>语言，只要你能编译成字节码就能在我的虚拟机上运行，例如Scala语言，它可以被编译成字节码运行在<code>Java</code>虚拟机上，且可以调用<code>Java</code>的所有类库。</p><p>字节码的意义在于什么呢？在于只要有了字节码，就可以在不同平台的虚拟机实现上运行，即：“一次编译，到处运行”。</p><p>虚拟机的另一个特点是它能够进行自动内存管理和垃圾回收，不像<code>C++</code>语言那样需要开发者手动进行内存的分配与回收，这一点有利也有弊，“利”是方便了开发者，无需过多关注内存，将精力放在程序的业务逻辑上；“弊”是可能会由于开发者的小失误，导致内存溢出，从而使程序崩溃。于是内存管理和垃圾回收出现了一些可以调优的地方。</p><h2 id="虚拟机是如何运行字节码的？"><a href="#虚拟机是如何运行字节码的？" class="headerlink" title="虚拟机是如何运行字节码的？"></a>虚拟机是如何运行字节码的？</h2><p>从虚拟机视角看，执行<code>Java</code>代码首先需要将它被编译而成的<code>.class</code>字节码文件加载到<code>Java</code>虚拟机中，加载后的<code>Java</code>类会被存放至方法区中，实际运行时，虚拟机会执行方法区内的代码。</p><p>对于虚拟机来说，在实际运行时会把它所管理的内存划分为若干个不同的数据区域。这些区域有各自的用途，以及创建和销毁的时间，有些区域的生命周期和虚拟机进程一致，而有些区域的生命周期和用户线程保持一致。</p><h3 id="运行时数据区域"><a href="#运行时数据区域" class="headerlink" title="运行时数据区域"></a>运行时数据区域</h3><p>根据《<code>Java</code>虚拟机规范》的规定，运行时期虚拟机内部区域划分如下图所示：</p><p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/jvm/runtime-data-area.png"  alt="运行时数据区"></p><p>这也是我们常说的<code>JVM</code>内存模型。下面我们对每个区域进行详细说明。</p><ol><li>程序计数器</li></ol><p>这是一块比较小的内存区域，简单的理解就是记录了当前线程正在运行的字节码的行数。对于单核<code>CPU</code>来说，实现多线程的方式是进行线程上下文切换，线程在运行过程中被挂起，当再次切换回来时需要回到之前运行的位置，程序计数器就是来记录该位置的一块内存区域，每个线程各自记录各自的，不会出现<code>OutOfMemoryError</code>错误，它是线程隔离的数据区。</p><ol start="2"><li>虚拟机栈</li></ol><p>虚拟机栈描述的是<code>Java</code>方法执行的线程内存模型，在运行过程中，每当调用一个<code>Java</code>方法，虚拟机会在当前线程的虚拟机栈中同步创建一个栈帧用来存储该方法的信息，包括局部变量表、操作数栈、动态连接和方法出口等信息。当退出当前调用的方法时，虚拟机栈会弹出该栈帧，无论是正常返回还是异常退出。也就是说，每一个<code>Java</code>方法的调用到结束都对应着一个栈帧在当前线程的虚拟机栈中入栈和出栈的过程。</p><p>局部变量表存放了编译期可知的<code>Java</code>基本数据类型、对象引用和<code>returnAddress</code>类型（指向方法<code>return</code>返回后将要执行的字节码指令的地址）。其中基本数据类型（<code>boolean</code>/<code>byte</code>/<code>char</code>/<code>short</code>/<code>int</code>/<code>float</code>/<code>long</code>/<code>double</code>）在局部变量表中以局部变量槽的形式表示，长度为<code>64</code>的<code>double</code>和<code>long</code>类型会占用两个变量槽，其余的都只会占用一个变量槽。当一个方法开始执行时，栈帧中的局部变量表内存大小就已经确定了，不会在运行期间动态改变。</p><p>如果线程请求的栈深度大于虚拟机栈所允许的深度（递归调用），将抛出<code>StackOverflowError</code>异常；如果线程申请栈空间时空间不足，则会抛出<code>OutOfMemoryError</code>异常。</p><ol start="3"><li>本地方法栈</li></ol><p>本地方法栈描述的是本地<code>Native</code>方法执行的线程模型，其作用与虚拟机栈一致。</p><ol start="4"><li>堆</li></ol><p>堆内存是虚拟机管理的内存中最大的一块，其生命周期和虚拟机进程保持一致。有一句话是这样说的：“<code>new</code>出来的对象都在堆上”。堆内存是垃圾收集器所管理的内存区域，现代垃圾收集器大部分是基于分代收集理论设计的，所以堆内存又被细分为“新生代”、“老年代”、“永久代”、“Eden区”、“From Survivor区”和“To Survivor区”。再次细划出这些区域的原因只是为了更好的的分配和回收内存。</p><p>堆内存是支持扩展的，可通过参数<code>-Xmx</code>（最大堆内存）和<code>-Xms</code>（最小堆内存）设置。为了避免<code>GC</code>后堆内存重新分配，通常将两者的值设为一样。</p><ol start="5"><li>方法区</li></ol><p>方法区是存放字节码的内存区域，当一个字节码文件被加载后，会将其对应类型信息、常量、静态变量和即时编译器编译后的代码缓存等数据保存至方法区。</p><p>说到方法区，不得不说到永久代的概念，在虚拟机的早期实现中，标准<code>HotSpot</code>虚拟机的垃圾收集器所管理的内存区域包含了方法区，所以方法区又被称为永久代，但实际上<code>HotSpot</code>虚拟机只是用永久代来实现方法区，为了省去专门为方法区提供内存管理的工作。在<code>Java6</code>时代，永久代就被放弃了，改为使用本地内存来实现方法区。到<code>Java7</code>时，原本存放在永久代的字符串常量池和静态变量被移动到堆内存中。而到了<code>Java8</code>时，永久代完全被抛弃，取而代之的是本地内存中的元空间，原本存在于永久代中的类型信息和代码缓存等数据被移到了元空间中。</p><ol start="6"><li>运行时常量池</li></ol><p>运行时常量池属于方法区的一部分，它存放的是常量池表，包含字面量和符号引用。该内存区域可以在运行期动态改变，常用的是<code>String</code>类的<code>intern()</code>方法，受方法区内存大小限制，该区域也会抛出<code>OutOfMemoryError</code>异常。</p><h3 id="字节码如何被执行？"><a href="#字节码如何被执行？" class="headerlink" title="字节码如何被执行？"></a>字节码如何被执行？</h3><p>对于<code>HotSpot</code>虚拟机来说，它所做的工作是将字节码翻译成机器码。而翻译有两种形式：第一种是解释执行，逐条将字节码翻译成机器码并执行；第二种是即时编译，将一个方法所包含的所有字节码翻译成机器码后再执行。</p><p>前者的优点是无需等待编译，而后者的优点是实际运行速度更快。<code>HotSpot</code>虚拟机采用了混合模式，综合两种形式，先解释执行字节码，通过热点代码探测技术发现热点代码后，以方法为单位进行即时编译。</p><p><code>HotSpot</code>虚拟机包含多个即时编译器：<code>C1</code>和<code>C2</code>等。</p><p><code>C1</code>又叫做<code>Client</code>编译器，面向的是对启动性能有要求的客户端<code>GUI</code>程序，采用的优化手段相对简单，因此编译时间较短。</p><p><code>C2</code>又叫做<code>Server</code>编译器，面向的是对峰值性能有要求的服务端程序，采用的优化手段相对复杂，因此编译时间较长，但生成的机器码的执行效率更高。</p><p>从<code>Java7</code>开始，<code>HotSpot</code>采用分层编译：热点方法首先会被<code>C1</code>编译，然后热点方法中的热点会进一步被<code>C2</code>编译。为了不影响程序的正常运行，热点方法的编译是放在子线程中进行的。<code>HotSpot</code>会根据<code>CPU</code>的核数设置即时编译的线程数，并按照<code>1:2</code>的比例分配给<code>C1</code>和<code>C2</code>编译器。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li><li>《深入拆解<code>Java</code>虚拟机》 - 极客时间</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Java虚拟机是如何运行字节码的？
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode题解-第242题：有效的字母异位词</title>

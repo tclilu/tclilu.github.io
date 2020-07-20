@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/</loc>
+    
+    <lastmod>2020-07-20T14:34:12.566Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/</loc>
+    
+    <lastmod>2020-07-20T14:33:59.593Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/</loc>
+    
+    <lastmod>2020-07-20T14:33:18.606Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2020/07/20/javase/jvm/run-class/</loc>
+    
+    <lastmod>2020-07-20T14:29:51.895Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/</loc>
     
     <lastmod>2020-07-14T14:44:52.041Z</lastmod>
