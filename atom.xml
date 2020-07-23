@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lilu.org.cn/"/>
-  <updated>2020-07-20T14:33:59.593Z</updated>
+  <updated>2020-07-23T12:52:36.450Z</updated>
   <id>https://lilu.org.cn/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>垃圾收集器</title>
+    <link href="https://lilu.org.cn/2020/07/23/javase/jvm/gcer/"/>
+    <id>https://lilu.org.cn/2020/07/23/javase/jvm/gcer/</id>
+    <published>2020-07-23T12:51:27.463Z</published>
+    <updated>2020-07-23T12:52:36.450Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果说垃圾收集算法是内存回收的方法论，那么垃圾收集器就是内存回收的实践者。根据分代收集理论，<code>HotSpot</code>虚拟机提供了多种作用于不同分代的垃圾收集器，它们是不同时代的思想汇聚。</p><h2 id="Serial新生代收集器"><a href="#Serial新生代收集器" class="headerlink" title="Serial新生代收集器"></a><code>Serial</code>新生代收集器</h2><p>最基础且历史最悠久的收集器，曾是<code>HotSpot</code>虚拟机新生代区域的唯一选择。它选用的是标记-复制算法，单线程收集，当它开始工作时，其它工作线程必须挂起，直到它回收内存完毕。<code>Stop The World</code>无法避免。但好处是单线程工作，对于核数较少的处理器来说，没有线程的上下文切换开销，收集效率高，适用于客户端模式的虚拟机。</p><h2 id="Serial-Old老年代收集器"><a href="#Serial-Old老年代收集器" class="headerlink" title="Serial Old老年代收集器"></a><code>Serial Old</code>老年代收集器</h2><p>与<code>Serial</code>新生代收集器配合使用，回收老年代，同样使用单线程收集，选用的是标记-整理算法，适用于客户端模式的虚拟机。</p><h2 id="ParNew新生代收集器"><a href="#ParNew新生代收集器" class="headerlink" title="ParNew新生代收集器"></a><code>ParNew</code>新生代收集器</h2><p><code>ParNew</code>新生代收集器实质是<code>Serial</code>收集器的多线程并行版本，在多核处理器的虚拟机上效率会大幅提高。选用的同样是标记-复制算法。它的特点是：除了<code>Serial</code>收集器外，目前只有它能与<code>CMS</code>收集器配合工作。大部分服务端模式的虚拟机选用该收集器回收新生代。</p><h2 id="CMS老年代收集器"><a href="#CMS老年代收集器" class="headerlink" title="CMS老年代收集器"></a><code>CMS</code>老年代收集器</h2><p><code>CMS (Concurrent Mark Sweep：并发标记-清除)</code>收集器是一种以获取最短回收停顿时间（<code>Stop The World</code>）为目标的收集器。它的回收过程分为四个阶段：</p><ul><li>初始标记（<code>CMS initial mark</code>）</li><li>并发标记（<code>CMS concurrent mark</code>）</li><li>重新标记（<code>CMS remark</code>）</li><li>并发清除（<code>CMS concurrent sweep</code>）</li></ul><ol><li>初始标记：标记<code>GC Roots</code>能直接关联到的对象，速度很快，但存在<code>Stop The World</code>停顿。</li><li>并发标记：从<code>GC Roots</code>的直接关联对象开始遍历整个对象图，耗时较长，但遍历线程与用户线程可并发执行。无<code>Stop The World</code>停顿。</li><li>重新标记：修正并发标记阶段，用户线程并发执行时导致标记产生变动的那一部分对象的标记记录（增量更新），存在<code>Stop The World</code>停顿，且一般比初始标记阶段停顿时间长。</li><li>并发清除：清理删除掉标记阶段判断为不可达的对象，清理线程可与用户线程并发执行。</li></ol><p>由于存在并发标记和并发清除阶段，用户线程在并发执行期间完全有可能产生新的垃圾对象，但这部分对象出现在标记过程结束之后，本次回收无法进行处理，只能等到下一次老年代内存回收时才能被清理掉，这部分垃圾被称为“浮动垃圾”。</p><p>在用户线程和收集器线程并发执行期间，是可能会有对象需要进入老年代的，这时就需要老年代预留一定的内存空间。在<code>Java5</code>的虚拟机中，默认设置是老年代内存使用了<code>68%</code>后就会触发<code>CMS</code>收集器回收老年代。这是一个比较保守的值，可以使用参数<code>-XX: CMSInitiatingOccu-pancyFraction</code>来调整这个默认值。到了<code>Java6</code>时，默认设置提高到了<code>92%</code>，但这又会存在一个问题，如果<code>CMS</code>收集器在并发期间，预留的内存无法满足用户线程的需要，就会出现一次“并发失败”，这时，虚拟机采用降级保护方案，挂起用户线程（<code>Stop The World</code>），临时启用<code>Serial Old</code>老年代收集器重新进行老年代的回收。总的来说，<code>-XX: CMSInitiatingOccu-pancyFraction</code>这个参数设置的太高会容易出现“并发失败”问题，性能不增反降；太低又会导致内存利用率不高，且回收频率会上升。所以，用于生产环境时应谨慎调整。</p><p>标记-清除算法不可避免的问题就是内存碎片问题，当老年代内存碎片过多时，没有连续空间来容纳大对象，即使还有很多内存没有使用，还是会触发<code>Full GC</code>。<code>CMS</code>收集器提供了一个<code>-XX: +UseCMS-CompactAtFullCollection</code>开关参数（默认开启，<code>Java9</code>废弃）用于在<code>CMS</code>收集器不得不进行<code>Full GC</code>时开启内存碎片的整理过程，此过程需要移动对象，无法进行并发，出现<code>Stop The World</code>停顿。同时<code>CMS</code>收集器还提供了<code>-XX: CMSFullGCsBefore-Compaction</code>参数（默认值为<code>0</code>：每次<code>Full GC</code>都进行碎片整理）要求收集器在执行过指定次数不整理碎片的<code>Full GC</code>后，下一次进入<code>Full GC</code>前先进行碎片整理。</p><h2 id="Parallel-Scavenge新生代收集器"><a href="#Parallel-Scavenge新生代收集器" class="headerlink" title="Parallel Scavenge新生代收集器"></a><code>Parallel Scavenge</code>新生代收集器</h2><p>吞吐量优先收集器。采用标记-复制算法。提供开关参数<code>-XX: +UseAdaptiveSizePolicy</code>让虚拟机根据当前系统的运行情况收集性能监控信息，动态调整新生代大小、<code>Eden</code>和<code>Survivor</code>区域比例等参数以提供最合适的停顿时间或最大吞吐量。</p><h2 id="Parallel-Old老年代收集器"><a href="#Parallel-Old老年代收集器" class="headerlink" title="Parallel Old老年代收集器"></a><code>Parallel Old</code>老年代收集器</h2><p>吞吐量优先收集器。采用标记-整理算法，多线程并发收集。与<code>Parallel Scavenge</code>新生代收集器搭配使用。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      垃圾收集的实践者
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>垃圾收集算法</title>
+    <link href="https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/"/>
+    <id>https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/</id>
+    <published>2020-07-23T12:51:06.121Z</published>
+    <updated>2020-07-23T12:52:36.441Z</updated>
+    
+    <content type="html"><![CDATA[<p>现代虚拟机的垃圾收集器大多基于分代收集理论，基于该理论，堆内存被划分出各种不同的区域，不同的区域有着不同的垃圾收集算法。</p><h2 id="分代收集理论"><a href="#分代收集理论" class="headerlink" title="分代收集理论"></a>分代收集理论</h2><p>分代收集理论建立在两个分代假说之上：</p><ul><li>弱分代假说：绝大多数对象都是朝生夕灭的。</li><li>强分代假说：熬过越多次垃圾收集过程的对象就越难以消亡。</li></ul><p>这两个分代假说共同奠定了多款常用的垃圾收集器的一致的设计原则：收集器应该将堆内存划分出不同的区域，然后将回收对象依据其年龄（一次垃圾回收，如果对象未被回收，则其年龄加一）分配到不同的区域进行存储。</p><p>显然，应该将大多数朝生夕死的对象集中在一起，在垃圾回收时只需关注如何保留少量存活的对象，而不是去标记那些大量将被回收的对象；将那些难以消亡的对象也集中在一起，减少对它们回收的频率。这样就有效的在时间和空间开销上做了权衡。</p><p>在堆内存划分出不同的区域之后，垃圾收集器才可以每次只回收其中某个区域的内存——因而才有了<code>Minor GC</code>、<code>Major GC</code>和<code>Full GC</code>回收类型的区分；针对不同区域也采用了适当的垃圾收集算法。</p><p>一切看似美好，但区域划分后会存在一个明显的问题：对象都不是孤立存在的，很可能存在跨代引用。</p><p>现代虚拟机一般都会将堆内存划分出新生代（<code>Young Generation</code>）和老年代（<code>Old Generation</code>）两个基本区域，对于新生代的回收称为<code>Minor GC</code>，但新生代的对象完全有可能被老年代所引用，同样，老年代的对象也完全有可能被新生代所引用，为了找出对应区域中的存活对象，不得不在固定的<code>GC Roots</code>之外，额外遍历老年代或新生代来确保可达性分析的正确性。遍历整个老年代所有对象的方案虽然理论上可行，但无疑会对内存回收带来很大的性能负担。于是有了第三个分代假说：</p><ul><li>跨代引用假说：跨代引用相对于同代引用来说仅占极少数。</li></ul><p>这个假说可以认为是前两个分代假说的推论：存在互相引用关系的两个对象，倾向于同时生存或同时死亡的。如果某个新生代对象存在跨代引用，由于老年代对象是难以消亡的，该引用会使新生代对象在被回收时存活下来，随后慢慢晋升至老年代，这时跨代引用就不存在了。</p><p>依据这条假说，我们就不应该再为了少量的跨代引用去扫描整个老年代，也不必浪费空间去记录每一个对象是否存在以及存在哪些跨代引用，只需在新生代上建立一个全局的称为记忆集（<code>Reference Set</code>）的数据结构，这个结构把老年代划分为若干小块，此后当发生<code>Minor GC</code>时，只有包含了跨代引用的小块内存里的对象才会被加入到<code>GC Roots</code>进行扫描。虽然这种方法需要在对象改变引用关系时维护记录数据的正确性，增加了一定的运行时开销，但跟在收集时扫描整个老年代相比是划算的。</p><h2 id="GC分类"><a href="#GC分类" class="headerlink" title="GC分类"></a><code>GC</code>分类</h2><ul><li>新生代收集（<code>Minor GC/Young GC</code>）：对新生代收集。</li><li>老年代收集（<code>Major GC/Old GC</code>）：对老年代收集。目前只有<code>CMS</code>收集器会有单独收集老年代的行为。</li><li>混合收集（<code>Mixed GC</code>）：对整个新生代以及部分老年代收集。目前只有<code>G1</code>收集器会有这种行为。</li><li>整堆收集（<code>Full GC</code>）：对整个堆内存和方法区收集。</li></ul><h2 id="垃圾收集算法"><a href="#垃圾收集算法" class="headerlink" title="垃圾收集算法"></a>垃圾收集算法</h2><ol><li>标记-清除算法</li></ol><p>该算法分为“标记”和“清除”两个阶段：首先使用可达性分析算法标记出所有需要回收的对象，标记完成后统一回收掉所有被标记的对象；也可以反过来，标记所有存活对象，统一回收未被标记的对象。</p><p>缺点：执行效率不稳定，如果堆中存在大量对象需要进行回收，则需要进行大量标记和清除的动作，执行效率随对象数量增长而降低；第二个是内存空间的碎片化问题，标记清除后会产生大量不连续的内存碎片。内存碎片太多会导致当需要分配大对象时无法找到连续的内存空间而不得不提前触发再一次的垃圾回收。</p><ol start="2"><li>标记-复制算法</li></ol><p>为了解决标记-清除算法在面对大量可回收对象时执行效率低的问题，有“大佬”提出了一种称为“半区复制”的垃圾收集算法：将可用内存按容量划分为大小相等的两块，每次只使用其中的一块，当这一块内存用完的时候才将其存活着的对象复制到另外一块内存上，然后再把已使用过的内存一次性清除。如果第一半内存中多数对象是存活的，那这种算法将会产生大量的内存间复制的开销，但对于多数对象是可回收状态时，算法就只需复制少量的存活对象，而且每次都是针对一半内存进行回收，内存碎片问题几乎不会出现。这种算法实现容易，执行效率也非常高，但其代价是可用内存缩小为了原来的一半。空间利用率太低。</p><p>现代虚拟机大多采用了该算法去回收新生代，有研究表明：新生代中朝生夕死的对象有<code>98%</code>都熬不过第一轮垃圾收集。因此并不需要将新生代划分为大小相等的两块，更好的做法是将新生代划分为一块较大的<code>Eden</code>区域和两块较小的<code>Survivor</code>空间，每次内存分配时只使用<code>Eden</code>区域和其中一块<code>Survivor</code>区域。当发生垃圾回收时，将<code>Eden</code>区和<code>Survivor</code>区存活的对象一次性复制到另一块<code>Survivor</code>区域上，然后直接回收掉<code>Eden</code>区和那块使用过的<code>Survivor</code>区。<code>HotSpot</code>虚拟机默认<code>Eden</code>和<code>Survivor</code>区域的大小比例是<code>8 : 1</code>，也就是说新生代中可用的内存空间为整个新生代的<code>90%</code>，这样空间利用率就达到了<code>90%</code>，虽然还有<code>10%</code>的另一块<code>Survivor</code>区域被浪费，但已经比较理想了。当然，任何人都不能保证研究在实际情况中的正确性，无法保证每次对新生代的回收都只有不多于<code>10%</code>的对象存活，于是存在一个兜底的安全设计：当另一块<code>Survivor</code>区域空间不足以容纳一次<code>Young GC</code>之后存活的对象时，就需要其它内存区域（大多指老年代）进行内存分配担保，将多余的存活对象直接复制到老年代。</p><ol start="3"><li>标记整理</li></ol><p>标记-复制算法在对象存活率较高时就会产生大量的内存间复制开销，优化过后的算法也需要浪费<code>10%</code>的空间，且需要其它空间进行内存分配担保。对于老年代来说，大部分对象都是难以消亡的，所以该算法并不适用于老年代。</p><p>针对老年代对象难以消亡的特征，有人提出了另一种有针对性的“标记-整理”算法，标记过程仍然采用的是可达性分析算法，但标记完成后并不是立刻进行回收，而是让所有存活对象都向内存空间一端移动，然后去清理边界以外的内存。</p><p>标记整理算法和标记清除算法的本质差异在于是否移动存活的对象，标记清除算法是不移动的，而标记整理算法是移动的。</p><p>是否移动存活对象是一个优缺点并存的风险决策。如果移动对象，尤其是在老年代这种每次回收都有大量对象存活的区域，移动存活对象并更新所有引用是一个极为负重的操作，而且这种移动对象操作必须全程暂停用户线程才能执行，这个暂停被称为<code>Stop The World</code>。如果不移动对象，那必然会造成内存碎片问题，而要解决内存碎片问题，就需要依赖更为复杂的内存分配器和内存访问器来解决，无疑加重了内存访问的负担，使程序的吞吐量降低。所以，无论是否移动对象都存在弊端，移动则出现<code>Stop The World</code>；不移动则可以忽略<code>Stop The World</code>的时间，但会产生内存碎片问题，且程序吞吐量降低。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li>《深入理解<code>Java</code>虚拟机：<code>JVM</code>高级特性与最佳实践（第<code>3</code>版）》 - 周志明</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      基于分代收集理论的垃圾收集算法
+    
+    </summary>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+    
+  </entry>
   
   <entry>
     <title>回收前的自救</title>

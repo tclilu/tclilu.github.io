@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lilu.org.cn/2020/07/23/javase/jvm/gcer/</loc>
+    <lastmod>2020-07-23</lastmod>
+  </url>  <url>
+    <loc>https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/</loc>
+    <lastmod>2020-07-23</lastmod>
+  </url>  <url>
     <loc>https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/</loc>
     <lastmod>2020-07-20</lastmod>
   </url>  <url>

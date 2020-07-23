@@ -1,3 +1,5 @@
+https://lilu.org.cn/2020/07/23/javase/jvm/gcer/
+https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/
 https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/
 https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/
 https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/
