@@ -2584,14 +2584,14 @@ figure.gallery-group .gallery-group-name:after {
   width: 100%;
 }
 #nav.sunchaser-bg-wapper {
-  -moz-animation: sunchaser-bg-wapper 4s forwards;
-  -webkit-animation: sunchaser-bg-wapper 4s forwards;
-  -ms-animation: sunchaser-bg-wapper 4s forwards;
-  -webkit-animation: sunchaser-bg-wapper 4s forwards;
-  -moz-animation: sunchaser-bg-wapper 4s forwards;
-  -o-animation: sunchaser-bg-wapper 4s forwards;
-  -ms-animation: sunchaser-bg-wapper 4s forwards;
-  animation: sunchaser-bg-wapper 4s forwards;
+  -moz-animation: sunchaser-bg-wapper 3s forwards;
+  -webkit-animation: sunchaser-bg-wapper 3s forwards;
+  -ms-animation: sunchaser-bg-wapper 3s forwards;
+  -webkit-animation: sunchaser-bg-wapper 3s forwards;
+  -moz-animation: sunchaser-bg-wapper 3s forwards;
+  -o-animation: sunchaser-bg-wapper 3s forwards;
+  -ms-animation: sunchaser-bg-wapper 3s forwards;
+  animation: sunchaser-bg-wapper 3s forwards;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
