@@ -2010,7 +2010,6 @@ blockquote footer cite:before {
   display: block;
   background-color: #9370db;
   color: #fff;
-  text-transform: uppercase;
   line-height: 1.6rem;
 }
 #aside_content .card-info #bookmark-it span {
@@ -2584,6 +2583,55 @@ figure.gallery-group .gallery-group-name:after {
   padding: 0 0.5rem;
   width: 100%;
 }
+#nav.sunchaser-bg-wapper {
+  -moz-animation: sunchaser-bg-wapper 4s forwards;
+  -webkit-animation: sunchaser-bg-wapper 4s forwards;
+  -ms-animation: sunchaser-bg-wapper 4s forwards;
+  -webkit-animation: sunchaser-bg-wapper 4s forwards;
+  -moz-animation: sunchaser-bg-wapper 4s forwards;
+  -o-animation: sunchaser-bg-wapper 4s forwards;
+  -ms-animation: sunchaser-bg-wapper 4s forwards;
+  animation: sunchaser-bg-wapper 4s forwards;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+@-moz-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-ms-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
 #nav #site_title,
 #nav #site_subtitle,
 #nav #scroll_down .scroll-down-effects {
@@ -2693,6 +2741,54 @@ figure.gallery-group .gallery-group-name:after {
 #nav.post-bg #post-info #post-meta a:hover {
   color: #9370db;
   text-decoration: underline;
+}
+@-moz-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes sunchaser-bg-wapper {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
 }
 #page-header {
   position: absolute;
@@ -4635,7 +4731,7 @@ img {
   background-color: #ff7242;
 }
 #vcomment textarea {
-  background: url("https://i.loli.net/2020/02/15/I1h3RAWuOmjkUSb.png") 100% 100% no-repeat;
+  background: url("https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment .info {
   display: none;
