@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/</loc>
+    <lastmod>2020-12-03</lastmod>
+  </url>
+  <url>
     <loc>https://lilu.org.cn/2020/11/17/javase/base/hashmap/</loc>
     <lastmod>2020-11-16</lastmod>
   </url>
