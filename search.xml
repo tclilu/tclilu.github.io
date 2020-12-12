@@ -13,16 +13,16 @@
       
       <categories>
           
-          <category> 算法 </category>
+          <category> 数据结构 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据结构 </tag>
+            <tag> 链表 </tag>
             
-            <tag> 算法 </tag>
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -40,16 +40,16 @@
       
       <categories>
           
-          <category> 算法 </category>
+          <category> 数据结构 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据结构 </tag>
+            <tag> 链表 </tag>
             
-            <tag> 算法 </tag>
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -67,16 +67,16 @@
       
       <categories>
           
-          <category> 算法 </category>
+          <category> 数据结构 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据结构 </tag>
+            <tag> 链表 </tag>
             
-            <tag> 算法 </tag>
+            <tag> 数据结构 </tag>
             
         </tags>
       
@@ -95,6 +95,8 @@
       <categories>
           
           <category> Java EE </category>
+          
+          <category> Maven </category>
           
       </categories>
       

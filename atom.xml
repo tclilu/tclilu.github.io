@@ -32,12 +32,12 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
       <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="算法" scheme="https://lilu.org.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -57,12 +57,12 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
       <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="算法" scheme="https://lilu.org.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -82,12 +82,12 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
       <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-      <category term="算法" scheme="https://lilu.org.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -108,6 +108,8 @@
     
     
       <category term="Java EE" scheme="https://lilu.org.cn/categories/Java-EE/"/>
+    
+      <category term="Maven" scheme="https://lilu.org.cn/categories/Java-EE/Maven/"/>
     
     
       <category term="Maven" scheme="https://lilu.org.cn/tags/Maven/"/>
