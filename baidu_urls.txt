@@ -1,3 +1,4 @@
+https://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/
 https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/
 https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/
 https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/
