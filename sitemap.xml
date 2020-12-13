@@ -44,6 +44,13 @@
   </url>
   
   <url>
+    <loc>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/</loc>
+    
+    <lastmod>2020-12-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/</loc>
     
     <lastmod>2020-12-11</lastmod>
@@ -52,13 +59,6 @@
   
   <url>
     <loc>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/</loc>
-    
-    <lastmod>2020-12-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/</loc>
     
     <lastmod>2020-12-11</lastmod>
     
@@ -536,14 +536,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/</loc>
+    <loc>https://lilu.org.cn/tags/MySQL/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/tags/MySQL/</loc>
+    <loc>https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -657,14 +657,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -678,14 +678,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/Java-EE/</loc>
+    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
+    <loc>https://lilu.org.cn/categories/Java-EE/</loc>
     <lastmod>2020-12-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

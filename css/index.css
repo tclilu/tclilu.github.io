@@ -2055,7 +2055,7 @@ blockquote footer cite:before {
   -o-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
-  object-fit: cover;
+  object-fit: fill;
 }
 #aside_content .card-recent-post .aside-recent-item > .aside-recent-post > a .aside-post-cover .aside-post-bg:hover {
   -webkit-box-shadow: none;
@@ -3374,7 +3374,7 @@ figure.gallery-group .gallery-group-name:after {
   -o-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
-  object-fit: cover;
+  object-fit: fill;
 }
 #recent-posts > .recent-post-item .post_cover img.post_bg:hover {
   -webkit-transform: scale(1.1);
