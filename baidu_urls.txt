@@ -1,7 +1,8 @@
+https://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/
 https://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/
 https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/
-https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/
 https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/
+https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/
 https://lilu.org.cn/2020/12/11/javaee/maven/maven-must-know-and-know/
 https://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/
 https://lilu.org.cn/2020/11/17/javase/base/hashmap/
