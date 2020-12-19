@@ -3707,6 +3707,9 @@ figure.gallery-group .gallery-group-name:after {
   .category-lists {
     padding: 0;
   }
+  #recent-posts {
+    padding: 45px 0 0 0;
+  }
   #recent-posts .recent-post-item {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
