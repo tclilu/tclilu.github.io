@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lilu.org.cn/"/>
-  <updated>2020-12-18T16:00:00.000Z</updated>
+  <updated>2020-12-21T16:00:00.000Z</updated>
   <id>https://lilu.org.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构之链表-判断链表是否有环</title>
+    <link href="https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/"/>
+    <id>https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/</id>
+    <published>2020-12-21T16:00:00.000Z</published>
+    <updated>2020-12-21T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目：判断给定的链表中是否有环。如果有环则返回<code>true</code>，否则返回<code>false</code>。你能给出空间复杂度<code>O(1)</code>的解法么？</p><p><code>Leetcode</code>在线<code>OJ</code>系统：<a href="https://leetcode-cn.com/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/" target="_blank" rel="noopener">传送门</a></p><p>示例<code>1</code>：</p><pre class="mermaid">graph LRA[3]-->B[2]B[2]-->C[0]C[0]-->D[-4]D[-4]-->B[2]</pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输出：true</span><br><span class="line">解释：链表中有一个环，由 -4 指向 2</span><br></pre></td></tr></table></figure><p>示例<code>2</code>:</p><pre class="mermaid">graph LRA[1]-->B[2]B[2]-->A[1]</pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输出：&#96;true&#96;</span><br><span class="line">解释：链表中有一个环，由 2 指向 1</span><br></pre></td></tr></table></figure><p>示例<code>3</code>：</p><pre class="mermaid">graph LRA[1]</pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输出：&#96;false&#96;</span><br><span class="line">解释：链表中没有环</span><br></pre></td></tr></table></figure><p>思路：将链表想象成校园里的操场，两位同学从同一起点开始比赛跑步，出发后，如果两位同学的跑步速度不一致，那么跑过若干圈后，他们一定会在跑道的某处相遇，且跑的快的同学恰好比跑的慢的同学多跑一圈。这是物理运动学上的经典追击问题。</p><p>对于链表来说，我们可以定义一快一慢两个指针，让它们同时从头节点同时出发，快指针每次走两步，慢指针每次走一步，如果它们最终能在某处“相遇”，说明链表有环，如果快指针走到链表末尾都没有追上走的慢的指针，说明链表无环。</p><p>以上的思路俗称：“快慢指针法”；学名：<code>Floyd</code>判圈算法。</p><blockquote><p><code>Floyd</code>判圈算法（<code>Floyd Cycle Detection Algorithm</code>），又称龟兔赛跑算法(<code>Tortoise and Hare Algorithm</code>),是一个可以在有限状态机、迭代函数或者链表上判断是否存在环，以及判断环的起点与长度的算法。</p></blockquote><p><code>Java</code>语言实现如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">hasCycle</span><span class="params">(SinglyLinkedListNode head)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (head == <span class="keyword">null</span> || head.next == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    SinglyLinkedListNode fast = head;</span><br><span class="line">    SinglyLinkedListNode slow = head;</span><br><span class="line">    <span class="keyword">while</span> (fast != <span class="keyword">null</span> &amp;&amp; fast.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">        fast = fast.next.next;</span><br><span class="line">        slow = slow.next;</span><br><span class="line">        <span class="keyword">if</span> (fast == slow) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      数据结构之链表-判断链表是否有环。如果有环则返回true，否则返回false。使用Floyd判圈算法实现，达到O(1)的空间复杂度。
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>动手实现Lombok</title>
