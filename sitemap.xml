@@ -177,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/</loc>
+    <loc>https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</loc>
     
     <lastmod>2020-07-11</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</loc>
+    <loc>https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/</loc>
     
     <lastmod>2020-07-11</lastmod>
     
@@ -564,14 +564,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/tags/MySQL/</loc>
+    <loc>https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/</loc>
+    <loc>https://lilu.org.cn/tags/MySQL/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -685,14 +685,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -706,14 +706,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
+    <loc>https://lilu.org.cn/categories/Java-EE/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/Java-EE/</loc>
+    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
     <lastmod>2020-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

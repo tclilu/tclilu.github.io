@@ -19,8 +19,8 @@ https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/
 https://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/
 https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/
 https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/
-https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/
 https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/
+https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/
 https://lilu.org.cn/2020/06/29/javase/base/string/
 https://lilu.org.cn/2020/06/04/algorithm/base/recursive-reverse-link/
 https://lilu.org.cn/2020/06/01/javase/base/arraylist/
