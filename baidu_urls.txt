@@ -1,4 +1,5 @@
-https://lilu.org.cn/2020/12/23/algorithm/leetcode/linkedlist/kth-node-from-end-of-list-lcci/
+https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/
+https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/
 https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/
 https://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/
 https://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/
@@ -17,7 +18,7 @@ https://lilu.org.cn/2020/07/20/javase/jvm/run-class/
 https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/
 https://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/
 https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/
-https://lilu.org.cn/2020/07/14/algorithm/leetcode/linkedlist/intersection-of-two-linked-lists-lcci/
+https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/
 https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/
 https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/
 https://lilu.org.cn/2020/06/29/javase/base/string/

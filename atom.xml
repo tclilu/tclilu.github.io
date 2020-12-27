@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lilu.org.cn/"/>
-  <updated>2020-12-22T16:00:00.000Z</updated>
+  <updated>2020-12-26T16:00:00.000Z</updated>
   <id>https://lilu.org.cn/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LeetCode题解-链表标签：面试题 02.03. 删除中间节点</title>
+    <link href="https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/"/>
+    <id>https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/</id>
+    <published>2020-12-26T16:00:00.000Z</published>
+    <updated>2020-12-26T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目：实现一种算法，删除单向链表中间的某个节点（即不是第一个或最后一个节点），假定你只能访问该节点。</p><p>示例：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[a]--&gt;B[b]</span><br><span class="line">B[b]--&gt;C[c]</span><br><span class="line">C[c]--&gt;D[d]</span><br><span class="line">D[d]--&gt;E[e]</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：节点c</span><br><span class="line">结果：不返回任何数据，将节点c从原链表中删除。</span><br></pre></td></tr></table></figure><p>思路：这题的思路有点意思。首先我们只能访问到节点<code>c</code>，按照常规思路，如果我们要删除节点<code>c</code>，就要将<code>c</code>的上一个节点<code>b</code>指向<code>c</code>的下一个节点<code>d</code>，但我们只能访问节点<code>c</code>和<code>d</code>，由于单向链表的特性，节点<code>b</code>我们是无法访问的。那我们该如何“神不知鬼不觉”的删除节点<code>c</code>呢？</p><p>“偷天换日”：我们的目标是让<code>b</code>指向<code>d</code>，但我们无法直接操作<code>b</code>，而<code>b</code>又一直指向<code>c</code>，所以我们只需要把<code>c</code>替换为<code>d</code>，然后再把<code>d</code>删除即可。</p><blockquote><p>删不掉我自己(<code>c</code>)，我就变成你(<code>d</code>)，再删掉你(<code>d</code>)，就等于删掉我自己(<code>c</code>)。</p></blockquote><p><code>Java</code>语言实现如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deleteNode</span><span class="params">(SinglyLinkedListNode node)</span> </span>&#123;</span><br><span class="line">    SinglyLinkedListNode next = node.next;</span><br><span class="line">    node.val = next.val;</span><br><span class="line">    node.next = next.next;</span><br><span class="line">    next = <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      LeetCode题解-链表标签：面试题 02.03. 删除中间节点
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+    
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LeetCode题解-链表标签：面试题 02.02. 返回倒数第k个节点</title>
-    <link href="https://lilu.org.cn/2020/12/23/algorithm/leetcode/linkedlist/kth-node-from-end-of-list-lcci/"/>
-    <id>https://lilu.org.cn/2020/12/23/algorithm/leetcode/linkedlist/kth-node-from-end-of-list-lcci/</id>
+    <link href="https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/"/>
+    <id>https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/</id>
     <published>2020-12-22T16:00:00.000Z</published>
     <updated>2020-12-22T16:00:00.000Z</updated>
     
@@ -36,6 +63,8 @@
     
       <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
       <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
     
@@ -479,8 +508,8 @@
   
   <entry>
     <title>LeetCode题解-链表标签：面试题 02.07. 链表相交</title>
-    <link href="https://lilu.org.cn/2020/07/14/algorithm/leetcode/linkedlist/intersection-of-two-linked-lists-lcci/"/>
-    <id>https://lilu.org.cn/2020/07/14/algorithm/leetcode/linkedlist/intersection-of-two-linked-lists-lcci/</id>
+    <link href="https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/"/>
+    <id>https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/</id>
     <published>2020-07-13T16:00:00.000Z</published>
     <updated>2020-07-13T16:00:00.000Z</updated>
     
@@ -497,6 +526,8 @@
     
       <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
+    
+      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
       <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
     

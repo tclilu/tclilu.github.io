@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lilu.org.cn/2020/12/23/algorithm/leetcode/linkedlist/kth-node-from-end-of-list-lcci/</loc>
+    <loc>https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/</loc>
+    <lastmod>2020-12-26</lastmod>
+  </url>
+  <url>
+    <loc>https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/</loc>
     <lastmod>2020-12-22</lastmod>
   </url>
   <url>
@@ -77,7 +81,7 @@
     <lastmod>2020-07-13</lastmod>
   </url>
   <url>
-    <loc>https://lilu.org.cn/2020/07/14/algorithm/leetcode/linkedlist/intersection-of-two-linked-lists-lcci/</loc>
+    <loc>https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/</loc>
     <lastmod>2020-07-13</lastmod>
   </url>
   <url>
