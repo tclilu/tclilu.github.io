@@ -1,5 +1,5 @@
+https://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/
 https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/
-https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/
 https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/
 https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/
 https://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/
