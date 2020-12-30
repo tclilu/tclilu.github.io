@@ -32,7 +32,9 @@
       <h5>©2020 - 2021 By SunChaser</h5>
     </div>
     <div class="layui-col-md3">
-      <ins class="adsbygoogle" style="display:block;" data-full-width-responsive="true" data-ad-format="auto" data-ad-client="ca-pub-4923931760030983" data-ad-slot="4292557511"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({})</script>
+      <div style="margin: 120px 0 0 10px">
+        <ins class="adsbygoogle" style="display:block;" data-full-width-responsive="true" data-ad-format="auto" data-ad-client="ca-pub-4923931760030983" data-ad-slot="4292557511"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({})</script>
+      </div>
     </div>
   </div>
 </div>
@@ -56,10 +58,10 @@
         });
         $.ajax({
             type: "GET",
-            url: "http://121.41.7.100:520/github?github_id=" + github_id,
+            url: "//121.41.7.100:520/github?github_id=" + github_id,
             dataType: "JSON",
             success: function(result) {
-                const str = 'http://121.41.7.100:520' + result.img_path.substring(1);
+                const str = '//121.41.7.100:520' + result.img_path.substring(1);
                 layer.close(loadIndex);
                 img.css("width","730px");
                 img.css("height","1280");
