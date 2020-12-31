@@ -5,9 +5,9 @@
   <subtitle>SunChaser</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://lilu.org.cn/"/>
+  <link href="http://lilu.org.cn/"/>
   <updated>2020-12-28T16:00:00.000Z</updated>
-  <id>https://lilu.org.cn/</id>
+  <id>http://lilu.org.cn/</id>
   
   <author>
     <name>SunChaser</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>LeetCode题解-链表标签：合并两个有序链表</title>
-    <link href="https://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/"/>
-    <id>https://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/</id>
+    <link href="http://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/"/>
+    <id>http://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/</id>
     <published>2020-12-28T16:00:00.000Z</published>
     <updated>2020-12-28T16:00:00.000Z</updated>
     
@@ -32,23 +32,23 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="链表" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode题解-链表标签：删除中间节点</title>
-    <link href="https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/"/>
-    <id>https://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/</id>
+    <link href="http://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/"/>
+    <id>http://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/</id>
     <published>2020-12-26T16:00:00.000Z</published>
     <updated>2020-12-26T16:00:00.000Z</updated>
     
@@ -61,23 +61,23 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="链表" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode题解-链表标签：返回倒数第k个节点</title>
-    <link href="https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/"/>
-    <id>https://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/</id>
+    <link href="http://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/"/>
+    <id>http://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/</id>
     <published>2020-12-22T16:00:00.000Z</published>
     <updated>2020-12-22T16:00:00.000Z</updated>
     
@@ -90,23 +90,23 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="链表" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>数据结构之链表-判断链表是否有环</title>
-    <link href="https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/"/>
-    <id>https://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/</id>
+    <link href="http://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/"/>
+    <id>http://lilu.org.cn/2020/12/22/algorithm/base/datastructure/link-has-cycle/</id>
     <published>2020-12-21T16:00:00.000Z</published>
     <updated>2020-12-21T16:00:00.000Z</updated>
     
@@ -119,19 +119,19 @@
     </summary>
     
     
-      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>动手实现Lombok</title>
-    <link href="https://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/"/>
-    <id>https://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/</id>
+    <link href="http://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/"/>
+    <id>http://lilu.org.cn/2020/12/19/javaee/lombok/impl-simple-lombok/</id>
     <published>2020-12-18T16:00:00.000Z</published>
     <updated>2020-12-18T16:00:00.000Z</updated>
     
@@ -144,19 +144,19 @@
     </summary>
     
     
-      <category term="Java EE" scheme="https://lilu.org.cn/categories/Java-EE/"/>
+      <category term="Java EE" scheme="http://lilu.org.cn/categories/Java-EE/"/>
     
-      <category term="Lombok" scheme="https://lilu.org.cn/categories/Java-EE/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/categories/Java-EE/Lombok/"/>
     
     
-      <category term="Lombok" scheme="https://lilu.org.cn/tags/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/tags/Lombok/"/>
     
   </entry>
   
   <entry>
     <title>一个冷门Lombok注解与Spring的结合</title>
-    <link href="https://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/"/>
-    <id>https://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/</id>
+    <link href="http://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/"/>
+    <id>http://lilu.org.cn/2020/12/14/javaee/lombok/lombok-combine-spring-di/</id>
     <published>2020-12-13T16:00:00.000Z</published>
     <updated>2020-12-13T16:00:00.000Z</updated>
     
@@ -169,19 +169,19 @@
     </summary>
     
     
-      <category term="Java EE" scheme="https://lilu.org.cn/categories/Java-EE/"/>
+      <category term="Java EE" scheme="http://lilu.org.cn/categories/Java-EE/"/>
     
-      <category term="Lombok" scheme="https://lilu.org.cn/categories/Java-EE/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/categories/Java-EE/Lombok/"/>
     
     
-      <category term="Lombok" scheme="https://lilu.org.cn/tags/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/tags/Lombok/"/>
     
   </entry>
   
   <entry>
     <title>Lombok必知必会</title>
-    <link href="https://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/"/>
-    <id>https://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/</id>
+    <link href="http://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/"/>
+    <id>http://lilu.org.cn/2020/12/13/javaee/lombok/lombok-base/</id>
     <published>2020-12-12T16:00:00.000Z</published>
     <updated>2020-12-12T16:00:00.000Z</updated>
     
@@ -194,19 +194,19 @@
     </summary>
     
     
-      <category term="Java EE" scheme="https://lilu.org.cn/categories/Java-EE/"/>
+      <category term="Java EE" scheme="http://lilu.org.cn/categories/Java-EE/"/>
     
-      <category term="Lombok" scheme="https://lilu.org.cn/categories/Java-EE/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/categories/Java-EE/Lombok/"/>
     
     
-      <category term="Lombok" scheme="https://lilu.org.cn/tags/Lombok/"/>
+      <category term="Lombok" scheme="http://lilu.org.cn/tags/Lombok/"/>
     
   </entry>
   
   <entry>
     <title>数据结构之链表-基础知识</title>
-    <link href="https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/"/>
-    <id>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/</id>
+    <link href="http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/"/>
+    <id>http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/data-structure-linkedlist-base/</id>
     <published>2020-12-11T16:00:00.000Z</published>
     <updated>2020-12-11T16:00:00.000Z</updated>
     
@@ -219,19 +219,19 @@
     </summary>
     
     
-      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>数据结构之链表-奇数个元素的链表的中间节点</title>
-    <link href="https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/"/>
-    <id>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/</id>
+    <link href="http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/"/>
+    <id>http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/middle-linknode/</id>
     <published>2020-12-11T16:00:00.000Z</published>
     <updated>2020-12-11T16:00:00.000Z</updated>
     
@@ -244,19 +244,19 @@
     </summary>
     
     
-      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>数据结构之链表-使用非递归法实现单链表的反转</title>
-    <link href="https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/"/>
-    <id>https://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/</id>
+    <link href="http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/"/>
+    <id>http://lilu.org.cn/2020/12/12/algorithm/base/datastructure/non-recursive-reverse-link/</id>
     <published>2020-12-11T16:00:00.000Z</published>
     <updated>2020-12-11T16:00:00.000Z</updated>
     
@@ -269,19 +269,19 @@
     </summary>
     
     
-      <category term="数据结构" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="数据结构" scheme="https://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="http://lilu.org.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>Apache Maven必知必会</title>
-    <link href="https://lilu.org.cn/2020/12/11/javaee/maven/maven-must-know-and-know/"/>
-    <id>https://lilu.org.cn/2020/12/11/javaee/maven/maven-must-know-and-know/</id>
+    <link href="http://lilu.org.cn/2020/12/11/javaee/maven/maven-must-know-and-know/"/>
+    <id>http://lilu.org.cn/2020/12/11/javaee/maven/maven-must-know-and-know/</id>
     <published>2020-12-10T16:00:00.000Z</published>
     <updated>2020-12-10T16:00:00.000Z</updated>
     
@@ -294,19 +294,19 @@
     </summary>
     
     
-      <category term="Java EE" scheme="https://lilu.org.cn/categories/Java-EE/"/>
+      <category term="Java EE" scheme="http://lilu.org.cn/categories/Java-EE/"/>
     
-      <category term="Maven" scheme="https://lilu.org.cn/categories/Java-EE/Maven/"/>
+      <category term="Maven" scheme="http://lilu.org.cn/categories/Java-EE/Maven/"/>
     
     
-      <category term="Maven" scheme="https://lilu.org.cn/tags/Maven/"/>
+      <category term="Maven" scheme="http://lilu.org.cn/tags/Maven/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode题解-第7题：整数反转</title>
-    <link href="https://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/"/>
-    <id>https://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/</id>
+    <link href="http://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/"/>
+    <id>http://lilu.org.cn/2020/12/04/algorithm/leetcode/easy/7/</id>
     <published>2020-12-03T16:00:00.000Z</published>
     <updated>2020-12-03T16:00:00.000Z</updated>
     
@@ -319,21 +319,21 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="简单" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E7%AE%80%E5%8D%95/"/>
+      <category term="简单" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E7%AE%80%E5%8D%95/"/>
     
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>面试必问HashMap</title>
-    <link href="https://lilu.org.cn/2020/11/17/javase/base/hashmap/"/>
-    <id>https://lilu.org.cn/2020/11/17/javase/base/hashmap/</id>
+    <link href="http://lilu.org.cn/2020/11/17/javase/base/hashmap/"/>
+    <id>http://lilu.org.cn/2020/11/17/javase/base/hashmap/</id>
     <published>2020-11-16T16:00:00.000Z</published>
     <updated>2020-11-16T16:00:00.000Z</updated>
     
@@ -346,17 +346,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>垃圾收集算法</title>
-    <link href="https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/"/>
-    <id>https://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/</id>
+    <link href="http://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/"/>
+    <id>http://lilu.org.cn/2020/07/23/javase/jvm/gc-algorithm/</id>
     <published>2020-07-22T16:00:00.000Z</published>
     <updated>2020-07-22T16:00:00.000Z</updated>
     
@@ -369,17 +369,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>垃圾收集器</title>
-    <link href="https://lilu.org.cn/2020/07/23/javase/jvm/gcer/"/>
-    <id>https://lilu.org.cn/2020/07/23/javase/jvm/gcer/</id>
+    <link href="http://lilu.org.cn/2020/07/23/javase/jvm/gcer/"/>
+    <id>http://lilu.org.cn/2020/07/23/javase/jvm/gcer/</id>
     <published>2020-07-22T16:00:00.000Z</published>
     <updated>2020-07-22T16:00:00.000Z</updated>
     
@@ -392,17 +392,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>回收前的自救</title>
-    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/"/>
-    <id>https://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/</id>
+    <link href="http://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/"/>
+    <id>http://lilu.org.cn/2020/07/20/javase/jvm/finalize-before-gc/</id>
     <published>2020-07-19T16:00:00.000Z</published>
     <updated>2020-07-19T16:00:00.000Z</updated>
     
@@ -415,17 +415,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>对象是“生”是“死”</title>
-    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/"/>
-    <id>https://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/</id>
+    <link href="http://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/"/>
+    <id>http://lilu.org.cn/2020/07/20/javase/jvm/object-is-alive-or-dead/</id>
     <published>2020-07-19T16:00:00.000Z</published>
     <updated>2020-07-19T16:00:00.000Z</updated>
     
@@ -438,17 +438,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>Java虚拟机是如何运行字节码的</title>
-    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/run-class/"/>
-    <id>https://lilu.org.cn/2020/07/20/javase/jvm/run-class/</id>
+    <link href="http://lilu.org.cn/2020/07/20/javase/jvm/run-class/"/>
+    <id>http://lilu.org.cn/2020/07/20/javase/jvm/run-class/</id>
     <published>2020-07-19T16:00:00.000Z</published>
     <updated>2020-07-19T16:00:00.000Z</updated>
     
@@ -461,17 +461,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>何为引用</title>
-    <link href="https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/"/>
-    <id>https://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/</id>
+    <link href="http://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/"/>
+    <id>http://lilu.org.cn/2020/07/20/javase/jvm/what-is-quote/</id>
     <published>2020-07-19T16:00:00.000Z</published>
     <updated>2020-07-19T16:00:00.000Z</updated>
     
@@ -484,17 +484,17 @@
     </summary>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/categories/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/categories/JVM/"/>
     
     
-      <category term="JVM" scheme="https://lilu.org.cn/tags/JVM/"/>
+      <category term="JVM" scheme="http://lilu.org.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>勇闯算法-在行列都排好序的矩阵中找指定的数</title>
-    <link href="https://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/"/>
-    <id>https://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/</id>
+    <link href="http://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/"/>
+    <id>http://lilu.org.cn/2020/07/14/algorithm/coding-interview-guide/arraysandmatrices/solution01/</id>
     <published>2020-07-13T16:00:00.000Z</published>
     <updated>2020-07-13T16:00:00.000Z</updated>
     
@@ -507,19 +507,19 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="程序员代码面试指南-IT名企算法与数据结构最优解" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BB%A3%E7%A0%81%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97-IT%E5%90%8D%E4%BC%81%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%80%E4%BC%98%E8%A7%A3/"/>
+      <category term="程序员代码面试指南-IT名企算法与数据结构最优解" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BB%A3%E7%A0%81%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97-IT%E5%90%8D%E4%BC%81%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%80%E4%BC%98%E8%A7%A3/"/>
     
     
-      <category term="程序员代码面试指南-IT名企算法与数据结构最优解" scheme="https://lilu.org.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BB%A3%E7%A0%81%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97-IT%E5%90%8D%E4%BC%81%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%80%E4%BC%98%E8%A7%A3/"/>
+      <category term="程序员代码面试指南-IT名企算法与数据结构最优解" scheme="http://lilu.org.cn/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BB%A3%E7%A0%81%E9%9D%A2%E8%AF%95%E6%8C%87%E5%8D%97-IT%E5%90%8D%E4%BC%81%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%9C%80%E4%BC%98%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode题解-第242题：有效的字母异位词</title>
-    <link href="https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/"/>
-    <id>https://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/</id>
+    <link href="http://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/"/>
+    <id>http://lilu.org.cn/2020/07/14/algorithm/leetcode/easy/242/</id>
     <published>2020-07-13T16:00:00.000Z</published>
     <updated>2020-07-13T16:00:00.000Z</updated>
     
@@ -532,21 +532,21 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="简单" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E7%AE%80%E5%8D%95/"/>
+      <category term="简单" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E7%AE%80%E5%8D%95/"/>
     
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode题解-链表标签：链表相交</title>
-    <link href="https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/"/>
-    <id>https://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/</id>
+    <link href="http://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/"/>
+    <id>http://lilu.org.cn/2020/07/14/algorithm/leetcode/tag/linkedlist/intersection-of-two-linked-lists-lcci/</id>
     <published>2020-07-13T16:00:00.000Z</published>
     <updated>2020-07-13T16:00:00.000Z</updated>
     
@@ -559,23 +559,23 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/"/>
     
-      <category term="链表" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
-      <category term="LeetCode" scheme="https://lilu.org.cn/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="http://lilu.org.cn/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>事务的特性和隔离级别</title>
-    <link href="https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/"/>
-    <id>https://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/</id>
+    <link href="http://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/"/>
+    <id>http://lilu.org.cn/2020/07/12/database/mysql/transaction-characteristics-and-isolation-levels/</id>
     <published>2020-07-11T16:00:00.000Z</published>
     <updated>2020-07-11T16:00:00.000Z</updated>
     
@@ -588,19 +588,19 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+      <category term="MySQL" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
     
     
-      <category term="MySQL" scheme="https://lilu.org.cn/tags/MySQL/"/>
+      <category term="MySQL" scheme="http://lilu.org.cn/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>MySQL为什么选择可重复读作为默认的隔离级别？</title>
-    <link href="https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/"/>
-    <id>https://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</id>
+    <link href="http://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/"/>
+    <id>http://lilu.org.cn/2020/07/12/database/mysql/why-does-mysql-choose-repeatable-read-as-the-default-isolation-level/</id>
     <published>2020-07-11T16:00:00.000Z</published>
     <updated>2020-07-11T16:00:00.000Z</updated>
     
@@ -613,19 +613,19 @@
     </summary>
     
     
-      <category term="数据库" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-      <category term="MySQL" scheme="https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+      <category term="MySQL" scheme="http://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
     
     
-      <category term="MySQL" scheme="https://lilu.org.cn/tags/MySQL/"/>
+      <category term="MySQL" scheme="http://lilu.org.cn/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>关于Java，你不得不学的java.lang.String类</title>
-    <link href="https://lilu.org.cn/2020/06/29/javase/base/string/"/>
-    <id>https://lilu.org.cn/2020/06/29/javase/base/string/</id>
+    <link href="http://lilu.org.cn/2020/06/29/javase/base/string/"/>
+    <id>http://lilu.org.cn/2020/06/29/javase/base/string/</id>
     <published>2020-06-28T16:00:00.000Z</published>
     <updated>2020-06-28T16:00:00.000Z</updated>
     
@@ -638,17 +638,17 @@
     </summary>
     
     
-      <category term="Java SE" scheme="https://lilu.org.cn/categories/Java-SE/"/>
+      <category term="Java SE" scheme="http://lilu.org.cn/categories/Java-SE/"/>
     
     
-      <category term="String" scheme="https://lilu.org.cn/tags/String/"/>
+      <category term="String" scheme="http://lilu.org.cn/tags/String/"/>
     
   </entry>
   
   <entry>
     <title>勇闯算法-递归法拿下反转链表的三杀</title>
-    <link href="https://lilu.org.cn/2020/06/04/algorithm/base/recursive-reverse-link/"/>
-    <id>https://lilu.org.cn/2020/06/04/algorithm/base/recursive-reverse-link/</id>
+    <link href="http://lilu.org.cn/2020/06/04/algorithm/base/recursive-reverse-link/"/>
+    <id>http://lilu.org.cn/2020/06/04/algorithm/base/recursive-reverse-link/</id>
     <published>2020-06-03T16:00:00.000Z</published>
     <updated>2020-06-03T16:00:00.000Z</updated>
     
@@ -661,17 +661,17 @@
     </summary>
     
     
-      <category term="算法" scheme="https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="链表" scheme="https://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
+      <category term="链表" scheme="http://lilu.org.cn/tags/%E9%93%BE%E8%A1%A8/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之ArrayList</title>
-    <link href="https://lilu.org.cn/2020/06/01/javase/base/arraylist/"/>
-    <id>https://lilu.org.cn/2020/06/01/javase/base/arraylist/</id>
+    <link href="http://lilu.org.cn/2020/06/01/javase/base/arraylist/"/>
+    <id>http://lilu.org.cn/2020/06/01/javase/base/arraylist/</id>
     <published>2020-05-31T16:00:00.000Z</published>
     <updated>2020-05-31T16:00:00.000Z</updated>
     
@@ -684,17 +684,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之AbstractSequentialList</title>
-    <link href="https://lilu.org.cn/2020/05/27/javase/base/abstract-sequential-list/"/>
-    <id>https://lilu.org.cn/2020/05/27/javase/base/abstract-sequential-list/</id>
+    <link href="http://lilu.org.cn/2020/05/27/javase/base/abstract-sequential-list/"/>
+    <id>http://lilu.org.cn/2020/05/27/javase/base/abstract-sequential-list/</id>
     <published>2020-05-26T16:00:00.000Z</published>
     <updated>2020-05-26T16:00:00.000Z</updated>
     
@@ -707,17 +707,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之LinkedList</title>
-    <link href="https://lilu.org.cn/2020/05/27/javase/base/linkedlist/"/>
-    <id>https://lilu.org.cn/2020/05/27/javase/base/linkedlist/</id>
+    <link href="http://lilu.org.cn/2020/05/27/javase/base/linkedlist/"/>
+    <id>http://lilu.org.cn/2020/05/27/javase/base/linkedlist/</id>
     <published>2020-05-26T16:00:00.000Z</published>
     <updated>2020-05-26T16:00:00.000Z</updated>
     
@@ -730,17 +730,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之Deque</title>
-    <link href="https://lilu.org.cn/2020/05/11/javase/base/deque/"/>
-    <id>https://lilu.org.cn/2020/05/11/javase/base/deque/</id>
+    <link href="http://lilu.org.cn/2020/05/11/javase/base/deque/"/>
+    <id>http://lilu.org.cn/2020/05/11/javase/base/deque/</id>
     <published>2020-05-10T16:00:00.000Z</published>
     <updated>2020-05-10T16:00:00.000Z</updated>
     
@@ -753,17 +753,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之Queue</title>
-    <link href="https://lilu.org.cn/2020/05/11/javase/base/queue/"/>
-    <id>https://lilu.org.cn/2020/05/11/javase/base/queue/</id>
+    <link href="http://lilu.org.cn/2020/05/11/javase/base/queue/"/>
+    <id>http://lilu.org.cn/2020/05/11/javase/base/queue/</id>
     <published>2020-05-10T16:00:00.000Z</published>
     <updated>2020-05-10T16:00:00.000Z</updated>
     
@@ -776,17 +776,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之AbstractList</title>
-    <link href="https://lilu.org.cn/2020/05/08/javase/base/abstract-list/"/>
-    <id>https://lilu.org.cn/2020/05/08/javase/base/abstract-list/</id>
+    <link href="http://lilu.org.cn/2020/05/08/javase/base/abstract-list/"/>
+    <id>http://lilu.org.cn/2020/05/08/javase/base/abstract-list/</id>
     <published>2020-05-07T16:00:00.000Z</published>
     <updated>2020-05-07T16:00:00.000Z</updated>
     
@@ -799,17 +799,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之AbstractCollection</title>
-    <link href="https://lilu.org.cn/2020/05/05/javase/base/abstract-collection/"/>
-    <id>https://lilu.org.cn/2020/05/05/javase/base/abstract-collection/</id>
+    <link href="http://lilu.org.cn/2020/05/05/javase/base/abstract-collection/"/>
+    <id>http://lilu.org.cn/2020/05/05/javase/base/abstract-collection/</id>
     <published>2020-05-04T16:00:00.000Z</published>
     <updated>2020-05-04T16:00:00.000Z</updated>
     
@@ -822,17 +822,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之Collection</title>
-    <link href="https://lilu.org.cn/2020/05/05/javase/base/collection/"/>
-    <id>https://lilu.org.cn/2020/05/05/javase/base/collection/</id>
+    <link href="http://lilu.org.cn/2020/05/05/javase/base/collection/"/>
+    <id>http://lilu.org.cn/2020/05/05/javase/base/collection/</id>
     <published>2020-05-04T16:00:00.000Z</published>
     <updated>2020-05-04T16:00:00.000Z</updated>
     
@@ -845,17 +845,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之List</title>
-    <link href="https://lilu.org.cn/2020/05/05/javase/base/list/"/>
-    <id>https://lilu.org.cn/2020/05/05/javase/base/list/</id>
+    <link href="http://lilu.org.cn/2020/05/05/javase/base/list/"/>
+    <id>http://lilu.org.cn/2020/05/05/javase/base/list/</id>
     <published>2020-05-04T16:00:00.000Z</published>
     <updated>2020-05-04T16:00:00.000Z</updated>
     
@@ -868,17 +868,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之Cloneable</title>
-    <link href="https://lilu.org.cn/2020/04/26/javase/base/cloneable/"/>
-    <id>https://lilu.org.cn/2020/04/26/javase/base/cloneable/</id>
+    <link href="http://lilu.org.cn/2020/04/26/javase/base/cloneable/"/>
+    <id>http://lilu.org.cn/2020/04/26/javase/base/cloneable/</id>
     <published>2020-04-25T16:00:00.000Z</published>
     <updated>2020-04-25T16:00:00.000Z</updated>
     
@@ -891,17 +891,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>深入理解深浅拷贝</title>
-    <link href="https://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/"/>
-    <id>https://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/</id>
+    <link href="http://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/"/>
+    <id>http://lilu.org.cn/2020/04/26/javase/base/depth-shallow-copy/</id>
     <published>2020-04-25T16:00:00.000Z</published>
     <updated>2020-04-25T16:00:00.000Z</updated>
     
@@ -914,17 +914,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之RandomAccess</title>
-    <link href="https://lilu.org.cn/2020/04/26/javase/base/randomaccess/"/>
-    <id>https://lilu.org.cn/2020/04/26/javase/base/randomaccess/</id>
+    <link href="http://lilu.org.cn/2020/04/26/javase/base/randomaccess/"/>
+    <id>http://lilu.org.cn/2020/04/26/javase/base/randomaccess/</id>
     <published>2020-04-25T16:00:00.000Z</published>
     <updated>2020-04-25T16:00:00.000Z</updated>
     
@@ -937,17 +937,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>JDK源码解析之Serializable</title>
-    <link href="https://lilu.org.cn/2020/03/21/javase/base/serializable/"/>
-    <id>https://lilu.org.cn/2020/03/21/javase/base/serializable/</id>
+    <link href="http://lilu.org.cn/2020/03/21/javase/base/serializable/"/>
+    <id>http://lilu.org.cn/2020/03/21/javase/base/serializable/</id>
     <published>2020-03-20T16:00:00.000Z</published>
     <updated>2020-03-20T16:00:00.000Z</updated>
     
@@ -960,17 +960,17 @@
     </summary>
     
     
-      <category term="JDK源码解析" scheme="https://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+      <category term="JDK源码解析" scheme="http://lilu.org.cn/categories/JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之调度中心—初始化失败任务管理中心</title>
-    <link href="https://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/"/>
-    <id>https://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/</id>
+    <link href="http://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/"/>
+    <id>http://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/</id>
     <published>2020-03-02T16:00:00.000Z</published>
     <updated>2020-03-02T16:00:00.000Z</updated>
     
@@ -983,19 +983,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务</title>
-    <link href="https://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/"/>
-    <id>https://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/</id>
+    <link href="http://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/"/>
+    <id>http://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/</id>
     <published>2020-02-28T16:00:00.000Z</published>
     <updated>2020-02-28T16:00:00.000Z</updated>
     
@@ -1008,19 +1008,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之调度中心—初始化国际化组件</title>
-    <link href="https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"/>
-    <id>https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/</id>
+    <link href="http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"/>
+    <id>http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/</id>
     <published>2020-02-26T16:00:00.000Z</published>
     <updated>2020-02-26T16:00:00.000Z</updated>
     
@@ -1033,19 +1033,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之调度中心启动流程解析</title>
-    <link href="https://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/"/>
-    <id>https://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/</id>
+    <link href="http://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/"/>
+    <id>http://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/</id>
     <published>2020-02-25T16:00:00.000Z</published>
     <updated>2020-02-25T16:00:00.000Z</updated>
     
@@ -1058,19 +1058,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>创建mysql5.7的Docker容器</title>
-    <link href="https://lilu.org.cn/2020/02/19/docker/create-mysql-container/"/>
-    <id>https://lilu.org.cn/2020/02/19/docker/create-mysql-container/</id>
+    <link href="http://lilu.org.cn/2020/02/19/docker/create-mysql-container/"/>
+    <id>http://lilu.org.cn/2020/02/19/docker/create-mysql-container/</id>
     <published>2020-02-18T16:00:00.000Z</published>
     <updated>2020-02-18T16:00:00.000Z</updated>
     
@@ -1083,17 +1083,17 @@
     </summary>
     
     
-      <category term="Docker" scheme="https://lilu.org.cn/categories/Docker/"/>
+      <category term="Docker" scheme="http://lilu.org.cn/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="https://lilu.org.cn/tags/Docker/"/>
+      <category term="Docker" scheme="http://lilu.org.cn/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>Docker常用命令</title>
-    <link href="https://lilu.org.cn/2020/02/19/docker/docker-common-commands/"/>
-    <id>https://lilu.org.cn/2020/02/19/docker/docker-common-commands/</id>
+    <link href="http://lilu.org.cn/2020/02/19/docker/docker-common-commands/"/>
+    <id>http://lilu.org.cn/2020/02/19/docker/docker-common-commands/</id>
     <published>2020-02-18T16:00:00.000Z</published>
     <updated>2020-02-18T16:00:00.000Z</updated>
     
@@ -1106,17 +1106,17 @@
     </summary>
     
     
-      <category term="Docker" scheme="https://lilu.org.cn/categories/Docker/"/>
+      <category term="Docker" scheme="http://lilu.org.cn/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="https://lilu.org.cn/tags/Docker/"/>
+      <category term="Docker" scheme="http://lilu.org.cn/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之搭建本地调度平台</title>
-    <link href="https://lilu.org.cn/2020/02/13/middleware/xxl-job/build-local-dispatch-platform/"/>
-    <id>https://lilu.org.cn/2020/02/13/middleware/xxl-job/build-local-dispatch-platform/</id>
+    <link href="http://lilu.org.cn/2020/02/13/middleware/xxl-job/build-local-dispatch-platform/"/>
+    <id>http://lilu.org.cn/2020/02/13/middleware/xxl-job/build-local-dispatch-platform/</id>
     <published>2020-02-12T16:00:00.000Z</published>
     <updated>2020-02-12T16:00:00.000Z</updated>
     
@@ -1129,19 +1129,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>修炼xxl-job之执行器项目七大配置项解析</title>
-    <link href="https://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sourcecode-analysis/"/>
-    <id>https://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sourcecode-analysis/</id>
+    <link href="http://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sourcecode-analysis/"/>
+    <id>http://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sourcecode-analysis/</id>
     <published>2020-02-12T16:00:00.000Z</published>
     <updated>2020-02-12T16:00:00.000Z</updated>
     
@@ -1154,19 +1154,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="定时任务" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+      <category term="定时任务" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
     
     
-      <category term="xxl-job" scheme="https://lilu.org.cn/tags/xxl-job/"/>
+      <category term="xxl-job" scheme="http://lilu.org.cn/tags/xxl-job/"/>
     
   </entry>
   
   <entry>
     <title>Windows 10下Git安装及SSH公私钥配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-git/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-git/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-git/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-git/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1179,17 +1179,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Git" scheme="https://lilu.org.cn/tags/Git/"/>
+      <category term="Git" scheme="http://lilu.org.cn/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Windows 10下IntelliJ IDEA 2019.3.2安装和常用配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-idea/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-idea/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-idea/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-idea/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1202,17 +1202,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="IntelliJ IDEA" scheme="https://lilu.org.cn/tags/IntelliJ-IDEA/"/>
+      <category term="IntelliJ IDEA" scheme="http://lilu.org.cn/tags/IntelliJ-IDEA/"/>
     
   </entry>
   
   <entry>
     <title>Windows 10下JDK安装及环境变量配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-jdk/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-jdk/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-jdk/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-jdk/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1225,17 +1225,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="JDK" scheme="https://lilu.org.cn/tags/JDK/"/>
+      <category term="JDK" scheme="http://lilu.org.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>Windows 10下Maven安装及配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-maven/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-maven/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-maven/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-maven/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1248,17 +1248,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Maven" scheme="https://lilu.org.cn/tags/Maven/"/>
+      <category term="Maven" scheme="http://lilu.org.cn/tags/Maven/"/>
     
   </entry>
   
   <entry>
     <title>Windows 10下Node.js安装与配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-nodejs/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-nodejs/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-nodejs/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-nodejs/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1271,17 +1271,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Node.js" scheme="https://lilu.org.cn/tags/Node-js/"/>
+      <category term="Node.js" scheme="http://lilu.org.cn/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>重装Windows10系统</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-windows10/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-windows10/</id>
+    <link href="http://lilu.org.cn/2020/02/07/installed/install-windows10/"/>
+    <id>http://lilu.org.cn/2020/02/07/installed/install-windows10/</id>
     <published>2020-02-06T16:00:00.000Z</published>
     <updated>2020-02-06T16:00:00.000Z</updated>
     
@@ -1294,17 +1294,17 @@
     </summary>
     
     
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <category term="安装配置" scheme="http://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Windows10" scheme="https://lilu.org.cn/tags/Windows10/"/>
+      <category term="Windows10" scheme="http://lilu.org.cn/tags/Windows10/"/>
     
   </entry>
   
   <entry>
     <title>方法重载Overload</title>
-    <link href="https://lilu.org.cn/2020/01/09/javase/base/method-overload/"/>
-    <id>https://lilu.org.cn/2020/01/09/javase/base/method-overload/</id>
+    <link href="http://lilu.org.cn/2020/01/09/javase/base/method-overload/"/>
+    <id>http://lilu.org.cn/2020/01/09/javase/base/method-overload/</id>
     <published>2020-01-08T16:00:00.000Z</published>
     <updated>2020-01-08T16:00:00.000Z</updated>
     
@@ -1317,17 +1317,17 @@
     </summary>
     
     
-      <category term="Java SE" scheme="https://lilu.org.cn/categories/Java-SE/"/>
+      <category term="Java SE" scheme="http://lilu.org.cn/categories/Java-SE/"/>
     
     
-      <category term="方法重载" scheme="https://lilu.org.cn/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/"/>
+      <category term="方法重载" scheme="http://lilu.org.cn/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>基本数据类型char为什么不会被隐式转换成byte或short类型？</title>
-    <link href="https://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/"/>
-    <id>https://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/</id>
+    <link href="http://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/"/>
+    <id>http://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/</id>
     <published>2020-01-08T16:00:00.000Z</published>
     <updated>2020-01-08T16:00:00.000Z</updated>
     
@@ -1340,17 +1340,17 @@
     </summary>
     
     
-      <category term="Java SE" scheme="https://lilu.org.cn/categories/Java-SE/"/>
+      <category term="Java SE" scheme="http://lilu.org.cn/categories/Java-SE/"/>
     
     
-      <category term="隐式转换" scheme="https://lilu.org.cn/tags/%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+      <category term="隐式转换" scheme="http://lilu.org.cn/tags/%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>2019年度总结</title>
-    <link href="https://lilu.org.cn/2019/12/31/annual-summary/2019/"/>
-    <id>https://lilu.org.cn/2019/12/31/annual-summary/2019/</id>
+    <link href="http://lilu.org.cn/2019/12/31/annual-summary/2019/"/>
+    <id>http://lilu.org.cn/2019/12/31/annual-summary/2019/</id>
     <published>2019-12-30T16:00:00.000Z</published>
     <updated>2019-12-30T16:00:00.000Z</updated>
     
@@ -1363,17 +1363,17 @@
     </summary>
     
     
-      <category term="年度总结" scheme="https://lilu.org.cn/categories/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+      <category term="年度总结" scheme="http://lilu.org.cn/categories/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="年度总结" scheme="https://lilu.org.cn/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
+      <category term="年度总结" scheme="http://lilu.org.cn/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
   <entry>
     <title>JavaBucket</title>
-    <link href="https://lilu.org.cn/2019/12/13/java-bucket/"/>
-    <id>https://lilu.org.cn/2019/12/13/java-bucket/</id>
+    <link href="http://lilu.org.cn/2019/12/13/java-bucket/"/>
+    <id>http://lilu.org.cn/2019/12/13/java-bucket/</id>
     <published>2019-12-12T16:00:00.000Z</published>
     <updated>2019-12-12T16:00:00.000Z</updated>
     
@@ -1391,8 +1391,8 @@
   
   <entry>
     <title>软件设计模式的概念与意义</title>
-    <link href="https://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/"/>
-    <id>https://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/</id>
+    <link href="http://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/"/>
+    <id>http://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1405,17 +1405,17 @@
     </summary>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>GoF的23种设计模式</title>
-    <link href="https://lilu.org.cn/2019/12/12/design-patterns/GoF&#39;s-23-design-patterns/"/>
-    <id>https://lilu.org.cn/2019/12/12/design-patterns/GoF&#39;s-23-design-patterns/</id>
+    <link href="http://lilu.org.cn/2019/12/12/design-patterns/GoF&#39;s-23-design-patterns/"/>
+    <id>http://lilu.org.cn/2019/12/12/design-patterns/GoF&#39;s-23-design-patterns/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1428,17 +1428,17 @@
     </summary>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>“煮熟的鸭子也会飞？”- 使用策略模式让你的“鸭子”飞起来</title>
-    <link href="https://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/"/>
-    <id>https://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/</id>
+    <link href="http://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/"/>
+    <id>http://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1451,19 +1451,19 @@
     </summary>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
-      <category term="行为型" scheme="https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A1%8C%E4%B8%BA%E5%9E%8B/"/>
+      <category term="行为型" scheme="http://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A1%8C%E4%B8%BA%E5%9E%8B/"/>
     
     
-      <category term="设计模式" scheme="https://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+      <category term="设计模式" scheme="http://lilu.org.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>分库分表中间件之ShardingSphere-入门案例</title>
-    <link href="https://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/"/>
-    <id>https://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/</id>
+    <link href="http://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/"/>
+    <id>http://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1476,19 +1476,19 @@
     </summary>
     
     
-      <category term="中间件" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+      <category term="中间件" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
     
-      <category term="分库分表" scheme="https://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/"/>
+      <category term="分库分表" scheme="http://lilu.org.cn/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/"/>
     
     
-      <category term="Apache ShardingSphere" scheme="https://lilu.org.cn/tags/Apache-ShardingSphere/"/>
+      <category term="Apache ShardingSphere" scheme="http://lilu.org.cn/tags/Apache-ShardingSphere/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第一部分：基础知识</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-I-Basics/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-I-Basics/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-I-Basics/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-I-Basics/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1501,19 +1501,19 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第二部分：函数式数据处理</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1526,19 +1526,19 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第三部分：高效Java 8编程（一）：接口重构和新特性</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(1)/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(1)/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(1)/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(1)/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1551,19 +1551,19 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第三部分：高效Java 8编程（二）：优雅的解决NPE问题</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(2)/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(2)/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(2)/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(2)/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1576,19 +1576,19 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第三部分：高效Java 8编程（三）：从一个生产环境的事故到异步编程思想</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1601,19 +1601,19 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
   <entry>
     <title>《Java 8实战》读书笔记系列——第三部分：高效Java 8编程（四）：使用新的日期时间API</title>
-    <link href="https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/"/>
-    <id>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</id>
+    <link href="http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/"/>
+    <id>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</id>
     <published>2019-12-11T16:00:00.000Z</published>
     <updated>2019-12-11T16:00:00.000Z</updated>
     
@@ -1626,12 +1626,12 @@
     </summary>
     
     
-      <category term="读书笔记" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="Java 8实战" scheme="https://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
+      <category term="Java 8实战" scheme="http://lilu.org.cn/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/Java-8%E5%AE%9E%E6%88%98/"/>
     
     
-      <category term="Java8" scheme="https://lilu.org.cn/tags/Java8/"/>
+      <category term="Java8" scheme="http://lilu.org.cn/tags/Java8/"/>
     
   </entry>
   
