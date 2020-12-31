@@ -60,14 +60,21 @@
         });
         $.ajax({
             type: "GET",
-            url: "//121.41.7.100:520/github?github_id=" + github_id,
+            timeout: 30000,
+            url: "//47.92.27.29:520/github?github_id=" + github_id,
             dataType: "JSON",
             success: function(result) {
-                const str = '//121.41.7.100:520' + result.img_path.substring(1);
+                const str = '//47.92.27.29:520' + result.img_path.substring(1);
                 layer.close(loadIndex);
                 img.css("width","730px");
                 img.css("height","1280");
                 img.attr('src',str);
+            },
+            complete : function(XMLHttpRequest,status){ //请求完成后最终执行参数
+                if(status=='timeout'){//超时,status还有success,error等值的情况
+                    ajaxTimeoutTest.abort();
+                    alert("超时");
+                }
             }
         });
     }
