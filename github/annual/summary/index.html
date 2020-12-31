@@ -65,8 +65,8 @@
             success: function(result) {
                 const str = '//47.92.27.29:520' + result.img_path.substring(1);
                 layer.close(loadIndex);
-                img.css("width","730px");
-                img.css("height","1280");
+                img.css("width","100%");
+                img.css("height","100%");
                 img.attr('src',str);
             },
             complete : function(XMLHttpRequest,status){ //请求完成后最终执行参数
