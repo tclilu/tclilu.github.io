@@ -1,3 +1,4 @@
+http://lilu.org.cn/2021/01/01/ops/nginx/install-nginx/
 http://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/
 http://lilu.org.cn/2020/12/27/algorithm/leetcode/tag/linkedlist/delete-middle-node-lcci/
 http://lilu.org.cn/2020/12/23/algorithm/leetcode/tag/linkedlist/kth-node-from-end-of-list-lcci/
@@ -41,8 +42,8 @@ http://lilu.org.cn/2020/03/03/middleware/xxl-job/job-fail-monitor/
 http://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/
 http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/
 http://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/
-http://lilu.org.cn/2020/02/19/docker/create-mysql-container/
-http://lilu.org.cn/2020/02/19/docker/docker-common-commands/
+http://lilu.org.cn/2020/02/19/ops/docker/create-mysql-container/
+http://lilu.org.cn/2020/02/19/ops/docker/docker-common-commands/
 http://lilu.org.cn/2020/02/13/middleware/xxl-job/build-local-dispatch-platform/
 http://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sourcecode-analysis/
 http://lilu.org.cn/2020/02/07/installed/install-git/
