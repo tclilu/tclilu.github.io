@@ -52,8 +52,8 @@ http://lilu.org.cn/2020/02/07/installed/install-git/
 http://lilu.org.cn/2020/02/07/installed/install-idea/
 http://lilu.org.cn/2020/02/07/installed/install-jdk/
 http://lilu.org.cn/2020/02/07/installed/install-maven/
-http://lilu.org.cn/2020/02/07/installed/install-windows10/
 http://lilu.org.cn/2020/02/07/installed/install-nodejs/
+http://lilu.org.cn/2020/02/07/installed/install-windows10/
 http://lilu.org.cn/2020/01/09/javase/base/method-overload/
 http://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/
 http://lilu.org.cn/2019/12/31/annual-summary/2019/
