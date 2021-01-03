@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://lilu.org.cn/2021/01/03/design-patterns/cloud/cache-aside-pattern/</loc>
+    <lastmod>2021-01-02</lastmod>
+  </url>
+  <url>
     <loc>http://lilu.org.cn/2021/01/01/ops/nginx/install-nginx/</loc>
     <lastmod>2020-12-31</lastmod>
   </url>
@@ -209,11 +213,11 @@
     <lastmod>2020-02-06</lastmod>
   </url>
   <url>
-    <loc>http://lilu.org.cn/2020/02/07/installed/install-nodejs/</loc>
+    <loc>http://lilu.org.cn/2020/02/07/installed/install-windows10/</loc>
     <lastmod>2020-02-06</lastmod>
   </url>
   <url>
-    <loc>http://lilu.org.cn/2020/02/07/installed/install-windows10/</loc>
+    <loc>http://lilu.org.cn/2020/02/07/installed/install-nodejs/</loc>
     <lastmod>2020-02-06</lastmod>
   </url>
   <url>
@@ -237,15 +241,11 @@
     <lastmod>2019-12-12</lastmod>
   </url>
   <url>
-    <loc>http://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/</loc>
+    <loc>http://lilu.org.cn/2019/12/12/design-patterns/gof/Design-pattern-overview/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>
   <url>
-    <loc>http://lilu.org.cn/2019/12/12/design-patterns/GoF's-23-design-patterns/</loc>
-    <lastmod>2019-12-11</lastmod>
-  </url>
-  <url>
-    <loc>http://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/</loc>
+    <loc>http://lilu.org.cn/2019/12/12/design-patterns/gof/GoF's-23-design-patterns/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>
   <url>
@@ -274,6 +274,10 @@
   </url>
   <url>
     <loc>http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</loc>
+    <lastmod>2019-12-11</lastmod>
+  </url>
+  <url>
+    <loc>http://lilu.org.cn/2019/12/12/design-patterns/gof/behavior/strategy/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>
 </urlset> 

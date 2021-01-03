@@ -1,3 +1,4 @@
+http://lilu.org.cn/2021/01/03/design-patterns/cloud/cache-aside-pattern/
 http://lilu.org.cn/2021/01/03/algorithm/leetcode/tag/linkedlist/palindrome-linked-list/
 http://lilu.org.cn/2021/01/01/ops/nginx/install-nginx/
 http://lilu.org.cn/2020/12/29/algorithm/leetcode/tag/linkedlist/merge-two-sorted-lists/
@@ -51,15 +52,14 @@ http://lilu.org.cn/2020/02/07/installed/install-git/
 http://lilu.org.cn/2020/02/07/installed/install-idea/
 http://lilu.org.cn/2020/02/07/installed/install-jdk/
 http://lilu.org.cn/2020/02/07/installed/install-maven/
-http://lilu.org.cn/2020/02/07/installed/install-nodejs/
 http://lilu.org.cn/2020/02/07/installed/install-windows10/
+http://lilu.org.cn/2020/02/07/installed/install-nodejs/
 http://lilu.org.cn/2020/01/09/javase/base/method-overload/
 http://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/
 http://lilu.org.cn/2019/12/31/annual-summary/2019/
 http://lilu.org.cn/2019/12/13/java-bucket/
-http://lilu.org.cn/2019/12/12/design-patterns/Design-pattern-overview/
-http://lilu.org.cn/2019/12/12/design-patterns/GoF's-23-design-patterns/
-http://lilu.org.cn/2019/12/12/design-patterns/behavior/strategy/
+http://lilu.org.cn/2019/12/12/design-patterns/gof/Design-pattern-overview/
+http://lilu.org.cn/2019/12/12/design-patterns/gof/GoF's-23-design-patterns/
 http://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/
 http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-I-Basics/
 http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/
@@ -67,3 +67,4 @@ http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-J
 http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(2)/
 http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/
 http://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/
+http://lilu.org.cn/2019/12/12/design-patterns/gof/behavior/strategy/
