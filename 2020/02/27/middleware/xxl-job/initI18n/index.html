@@ -1,117 +1,31 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>修炼xxl-job之调度中心—初始化国际化组件 | 打工这件小事</title><meta name="description" content="修炼xxl-job之调度中心—初始化国际化组件"><meta name="keywords" content="xxl-job"><meta name="author" content="SunChaser,admin@lilu.org.cn"><meta name="copyright" content="SunChaser"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="https://hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="修炼xxl-job之调度中心—初始化国际化组件"><meta name="twitter:description" content="修炼xxl-job之调度中心—初始化国际化组件"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png"><meta property="og:type" content="article"><meta property="og:title" content="修炼xxl-job之调度中心—初始化国际化组件"><meta property="og:url" content="http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"><meta property="og:site_name" content="打工这件小事"><meta property="og:description" content="修炼xxl-job之调度中心—初始化国际化组件"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = 'false'
-var t = Cookies.get("theme")
-if (autoChangeMode == '1'){
-  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
-  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined){
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport){
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour < 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-  }
-  } else if (t == 'light') activateLightMode()
-  else activateDarkMode()
-
-} else if (autoChangeMode == '2'){
-  now = new Date();
-  hour = now.getHours();
-  isNight = hour < 6 || hour >= 18
-  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode() 
-} else {
-  if ( t == 'dark' ) activateDarkMode()
-  else if ( t == 'light') activateLightMode()
-}
-
-function activateDarkMode(){
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
-  }
-}
-function activateLightMode(){
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
-  }
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"><link rel="prev" title="修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务" href="http://lilu.org.cn/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/"><link rel="next" title="修炼xxl-job之调度中心启动流程解析" href="http://lilu.org.cn/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?20da65740ab8563511ef3339403e6464";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-158613531-1', 'auto');
-ga('send', 'pageview');
-</script><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://lilu.org.cn","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"间"},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: {"languages":{"author":"作者: SunChaser","link":"链接: ","source":"来源: 打工这件小事","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
-  baiduPush: true,
-  highlightCopy: true,
-  highlightLang: true,
-  highlightShrink: 'false',
-  isFontAwesomeV5: false,
-  isPhotoFigcaption: false
-  
-}</script><script>var GLOBAL_CONFIG_SITE = { 
-  isPost: true,
-  isHome: false,
-  isSidebar: true  
-  }</script><noscript><style>
-#page-header {
-  opacity: 1
-}
-.justified-gallery img{
-  opacity: 1
-}
-</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="打工这件小事" type="application/atom+xml">
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">70</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/github/annual/summary/"><i class="fa-fw fa fa-github"></i><span> GitHub年度报告</span></a></div></div></div></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#国际化简介"><span class="toc-number">1.</span> <span class="toc-text">国际化简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#源码分析"><span class="toc-number">2.</span> <span class="toc-text">源码分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div class="post-bg" id="nav" style="background-image: url(https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">打工这件小事</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/github/annual/summary/"><i class="fa-fw fa fa-github"></i><span> GitHub年度报告</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">修炼xxl-job之调度中心—初始化国际化组件</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-02-27 00:00:00"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2020-02-27</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-02-27 00:00:00"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-02-27</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/">中间件</a><i class="fa fa-angle-right post-meta__separator" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">定时任务</a></span></div><div class="meta-secondline"> <span class="post-meta-wordcount"><i class="post-meta__icon fa fa-file-word-o" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">601</span><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-clock-o" aria-hidden="true"></i><span>阅读时长: 2 分钟</span></span></div><div class="meta-thirdline"><span class="post-meta-pv-cv"><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/2020/02/27/middleware/xxl-job/initI18n/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/2020/02/27/middleware/xxl-job/initI18n/" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><span style="display: none;">版权所有，禁止爬虫。</span><div class="post-copyright__author" style="display: none;"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:admin@lilu.org.cn">SunChaser</a></span></div><div class="post-copyright__type" style="display: none;"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/">http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/</a></span></div><div class="post-copyright__notice" style="display: none;"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lilu.org.cn" target="_blank">打工这件小事</a>！</span></div><div id="article-container"><p>调度中心启动时主要执行了<code>XxlJobScheduler.init()</code>方法，该方法中有六个初始化动作，这篇文章来分析第一个初始化动作：初始化国际化组件。其关键调用代码为：<code>initI18n();</code></p>
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>修炼xxl-job之调度中心—初始化国际化组件 - 打工这件小事</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="打工这件小事 - SunChaser"><meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/favicon.ico"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="打工这件小事 - SunChaser"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="修炼xxl-job之调度中心—初始化国际化组件"><meta property="og:type" content="blog"><meta property="og:title" content="修炼xxl-job之调度中心—初始化国际化组件"><meta property="og:url" content="https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"><meta property="og:site_name" content="打工这件小事"><meta property="og:description" content="修炼xxl-job之调度中心—初始化国际化组件"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/xxl-job/I18nUtil.loadI18nProp.png"><meta property="article:published_time" content="2020-02-26T16:00:00.000Z"><meta property="article:modified_time" content="2020-02-26T16:00:00.000Z"><meta property="article:author" content="SunChaser"><meta property="article:tag" content="xxl-job"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/xxl-job/I18nUtil.loadI18nProp.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"},"headline":"打工这件小事","image":["https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/xxl-job/I18nUtil.loadI18nProp.png"],"datePublished":"2020-02-26T16:00:00.000Z","dateModified":"2020-02-26T16:00:00.000Z","author":{"@type":"Person","name":"SunChaser"},"description":"修炼xxl-job之调度中心—初始化国际化组件"}</script><link rel="canonical" href="https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/"><link rel="alternate" href="/atom.xml" title="打工这件小事" type="application/atom+xml"><link rel="icon" href="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/favicon.ico"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?20da65740ab8563511ef3339403e6464";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-158613531-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-158613531-1');</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script data-ad-client="ca-pub-4923931760030983" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><meta name="generator" content="Hexo 5.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_01.png" alt="打工这件小事" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/github/annual/summary">GitHub年度报告</a><a class="navbar-item" href="/album">相册</a><a class="navbar-item" href="/friend">友链</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/sunchaser-lilu"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a></div></div></div></nav><script type="text/javascript" src="/js/theme.js"></script><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card widget"><div class="g-ads-x"><div class="card-content"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4923931760030983" data-ad-slot="8291512273"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card"><article class="card-content article " data-post-url="/2020/02/27/middleware/xxl-job/initI18n/" role="article"><h1 class="title is-3 is-size-4-mobile">修炼xxl-job之调度中心—初始化国际化组件</h1><div class="article-meta is-size-7 level is-mobile"><div class="level-left"><span class="level-item"><i class="fa fa-calendar">&nbsp;</i>
+                                     <time dateTime="2020-02-26T16:00:00.000Z" title="2020-02-26T16:00:00.000Z">2020-02-27</time>
+                                    发表｜</span><span class="level-item"><i class="fa fa-history">&nbsp;</i>
+                                     <time dateTime="2020-02-26T16:00:00.000Z" title="2020-02-26T16:00:00.000Z">2020-02-27</time>
+                                    更新｜</span><span class="level-item"><i class="fa fa-inbox"> </i><a class="link-muted" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/">中间件</a><span> &gt;  </span><i class="fa fa-inbox"> </i><a class="link-muted" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">定时任务</a><span> | </span></span><span class="level-item"><i class="far fa-clock"> </i>5 分钟读完 (大约715个字) ｜ </span><span class="level-item" id="busuanzi_container_page_pv"><i class="fa fa-eye">&nbsp;</i><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><hr><div class="content"><p>调度中心启动时主要执行了<code>XxlJobScheduler.init()</code>方法，该方法中有六个初始化动作，这篇文章来分析第一个初始化动作：初始化国际化组件。其关键调用代码为：<code>initI18n();</code></p>
 <h2 id="国际化简介"><a href="#国际化简介" class="headerlink" title="国际化简介"></a>国际化简介</h2><p>国际化又称为<code>i18n</code>，来源于国际化的英文单词<code>internationalization</code>从<code>i</code>到<code>n</code>之间有<code>18</code>个英文字母。</p>
 <h2 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h2><p>我们来看一下<code>initI18n()</code>方法的代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initI18n</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ExecutorBlockStrategyEnum item:ExecutorBlockStrategyEnum.values()) &#123;</span><br><span class="line">        item.setTitle(I18nUtil.getString(<span class="string">"jobconf_block_"</span>.concat(item.name())));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initI18n</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ExecutorBlockStrategyEnum item:ExecutorBlockStrategyEnum.values()) &#123;</span><br><span class="line">        item.setTitle(I18nUtil.getString(<span class="string">&quot;jobconf_block_&quot;</span>.concat(item.name())));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>循环迭代枚举<code>com.xxl.job.core.enums.ExecutorBlockStrategyEnum</code>，该枚举是执行器阻塞策略枚举。只有一个<code>title</code>属性，提供了三个枚举对象：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> ExecutorBlockStrategyEnum &#123;</span><br><span class="line"></span><br><span class="line">    SERIAL_EXECUTION(<span class="string">"Serial execution"</span>),</span><br><span class="line">    <span class="comment">/*CONCURRENT_EXECUTION("并行"),*/</span></span><br><span class="line">    DISCARD_LATER(<span class="string">"Discard Later"</span>),</span><br><span class="line">    COVER_EARLY(<span class="string">"Cover Early"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line">......</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">ExecutorBlockStrategyEnum</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    SERIAL_EXECUTION(<span class="string">&quot;Serial execution&quot;</span>),</span><br><span class="line">    <span class="comment">/*CONCURRENT_EXECUTION(&quot;并行&quot;),*/</span></span><br><span class="line">    DISCARD_LATER(<span class="string">&quot;Discard Later&quot;</span>),</span><br><span class="line">    COVER_EARLY(<span class="string">&quot;Cover Early&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String title;</span><br><span class="line">......</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 <p>循环中调用变异器<code>setTitle()</code>方法给每个枚举对象的<code>title</code>属性重新赋值。</p>
 <p>工具类<code>I18nUtil</code>的<code>getString()</code>方法获取到以<code>jobconf_block_</code>开头，以枚举对象名结尾的属性值。</p>
 <p>我们来看一下工具类<code>getString()</code>方法的实现：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getString</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> loadI18nProp().getProperty(key);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>调用了静态成员方法<code>loadI18nProp()</code>得到一个<code>Properties</code>对象，再调用其<code>getProperty()</code>方法从资源文件中获取对应<code>key</code>的值。</p>
 <p>来看一下<code>loadI18nProp()</code>方法的实现：</p>
-<p><img src="/" class="lazyload" data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/xxl-job/I18nUtil.loadI18nProp.png"  alt="I18nUtil.loadI18nProp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/xxl-job/I18nUtil.loadI18nProp.png" alt="I18nUtil.loadI18nProp"></p>
 <ul>
 <li>读取<code>application.properties</code>配置文件的<code>xxl.job.i18n</code>配置项的值;</li>
 <li><code>build</code>组装，得到<code>i18n</code>文件路径。即<code>resources\i18n</code>目录下的<code>Resource Bundle &#39;message&#39;</code>资源包文件;</li>
@@ -121,37 +35,102 @@ ga('send', 'pageview');
 <p>去<code>resources\i18n</code>目录看下资源包文件：<code>message.properties</code>和<code>message_en.properties</code>。搜索<code>jobconf_block_</code>，得到以下内容：</p>
 <p><code>message.properties</code>：</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## job conf</span></span><br><span class="line"><span class="attr">jobconf_block_SERIAL_EXECUTION</span>=<span class="string">单机串行</span></span><br><span class="line"><span class="attr">jobconf_block_DISCARD_LATER</span>=<span class="string">丢弃后续调度</span></span><br><span class="line"><span class="attr">jobconf_block_COVER_EARLY</span>=<span class="string">覆盖之前调度</span></span><br></pre></td></tr></table></figure>
-
 <p><code>message_en.properties</code>：</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## job conf</span></span><br><span class="line"><span class="attr">jobconf_block_SERIAL_EXECUTION</span>=<span class="string">Serial execution</span></span><br><span class="line"><span class="attr">jobconf_block_DISCARD_LATER</span>=<span class="string">Discard Later</span></span><br><span class="line"><span class="attr">jobconf_block_COVER_EARLY</span>=<span class="string">Cover Early</span></span><br></pre></td></tr></table></figure>
-
 <p>可以发现键中<code>jobconf_block_</code>后接的内容即为<code>ExecutorBlockStrategyEnum</code>枚举的<code>name</code>值。一共有三个阻塞策略：单机串行、丢弃后续调度和覆盖之前调度。</p>
 <p><code>initI18n()</code>方法的迭代完成后，枚举的<code>title</code>属性值就变成了对应的国际化设置。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这篇文章主要是分析了调度中心国际化组件的初始化原理。接下来我们将继续分析调度中心启动的其它初始化动作。</p>
-<div><div style="text-align:center;color: #ccc;font-size:14px;font-family: cursive;">-------------&#x6709;&#x8FC7;&#x7275;&#x6302;<i class="fa fa-umbrella" style="margin:0 7px;"></i>&#x4E86;&#x65E0;&#x7275;&#x6302;-------------</div></div><div id="wechat_subscriber"><center><img id="wechat_subscriber_qcode" src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/wxgzh.png" onerror="onerror=null;src='/assets/images/wechat/wxgzh.jpg'" alt="向日葵的自我修养"></center><div>欢迎关注公众号～：打工这件小事</div></div></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:admin@lilu.org.cn">SunChaser</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/">http://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lilu.org.cn" target="_blank">打工这件小事</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/xxl-job/">xxl-job</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/wechat.png" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/alipay.png" alt="支付宝"/><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><div class="post-ad"><ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4923931760030983" data-ad-slot="5533486997"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({})</script></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务</div></div></a></div><div class="next-post pull_right"><a href="/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">修炼xxl-job之调度中心启动流程解析</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/03/03/middleware/xxl-job/job-fail-monitor/" title="修炼xxl-job之调度中心—初始化失败任务管理中心"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-history fa-fw" aria-hidden="true"></i> 2020-03-03</div><div class="relatedPosts_title">修炼xxl-job之调度中心—初始化失败任务管理中心</div></div></a></div><div class="relatedPosts_item"><a href="/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/" title="修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-history fa-fw" aria-hidden="true"></i> 2020-02-29</div><div class="relatedPosts_title">修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务</div></div></a></div><div class="relatedPosts_item"><a href="/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/" title="修炼xxl-job之调度中心启动流程解析"><img class="relatedPosts_cover lazyload"data-src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-history fa-fw" aria-hidden="true"></i> 2020-02-26</div><div class="relatedPosts_title">修炼xxl-job之调度中心启动流程解析</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis/js/volantis.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
-var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-  return GUEST_INFO.indexOf(item) > -1
-});
-guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
-
-window.valine = new Valine({
-  el:'#vcomment',
-  notify: false,
-  verify: false,
-  appId: 'qc8Hd8UPK33VUIOJ3zDjAn8W-gzGzoHsz',
-  appKey: 'K2EAXbjfO9i6G4Myz0gHIIgr',
-  placeholder: '记得留下你的昵称和邮箱...可以快速收到回复哦',
-  avatar: 'monsterid',
-  meta: guest_info,
-  pageSize: '10',
-  lang: 'zh-cn',
-  recordIP: false,
-  serverURLs: ''
-});</script></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/cover.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By SunChaser</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/sunchaser-lilu/hexo-theme-sunchaser" target="_blank" rel="noopener"><span>SunChaser</span></a></div><div class="footer_custom_text">没有行动的梦想都是妄想~</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="canvas_nest" color="255,0,0" opacity="1" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script><script>if (document.getElementsByClassName('mermaid').length) {
-  loadScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',function () {
-    mermaid.initialize({
-      theme: 'neutral',
-  })
-})
-}</script></body></html>
+</div><div class="article-licensing box"><div class="licensing-title"><p>修炼xxl-job之调度中心—初始化国际化组件</p><p><a href="https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/">https://lilu.org.cn/2020/02/27/middleware/xxl-job/initI18n/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>SunChaser</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2020-02-27</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2020-02-27</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><hr><div class="level is-mobile is-flex"><div class="article-tags is-size-7"><i class="fas fa-tags has-text-grey"> </i><a class="link-muted" rel="tag" href="/tags/xxl-job/">xxl-job </a></div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><div class="social-share"></div><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></article></div><div class="card widget"><div class="g-ads-x"><div class="card-content"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4923931760030983" data-ad-slot="8291512273"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/alipay.png" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/hexo-theme-sunchaser/wechat.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/02/29/middleware/xxl-job/registry-center-heartbeat-renewal/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">修炼xxl-job之调度中心—初始化注册中心“心跳续约”服务</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/02/26/middleware/xxl-job/dispatch-center-start-process-analysis/"><span class="level-item">修炼xxl-job之调度中心启动流程解析</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="valine-thread"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script>new Valine({
+            el: '#valine-thread' ,
+            appId: "qc8Hd8UPK33VUIOJ3zDjAn8W-gzGzoHsz",
+            appKey: "K2EAXbjfO9i6G4Myz0gHIIgr",
+            placeholder: "快来评论吧～",
+            avatar: "monsterid",
+            
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            lang: "zh-CN",
+            
+            highlight: true,
+            
+            
+            
+            
+            
+            requiredFields: ["nick","mail"],
+        });</script></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen  order-3"><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label"> </h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4923931760030983" data-ad-slot="4292557511" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#国际化简介"><span class="level-left"><span class="level-item">1</span><span class="level-item">国际化简介</span></span></a></li><li><a class="level is-mobile" href="#源码分析"><span class="level-left"><span class="level-item">2</span><span class="level-item">源码分析</span></span></a></li><li><a class="level is-mobile" href="#总结"><span class="level-left"><span class="level-item">3</span><span class="level-item">总结</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_01.png" alt="打工这件小事" height="28"></a><p class="is-size-7"><span>&copy; 2021 SunChaser</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br><span>© 版权说明：[本网站所有内容均收集于互联网或自己创作，方便于网友与自己学习交流，如有侵权，请<a href="/message" target="_blank">留言</a>，立即处理]<br></span><span><span id="statistic-times">loading...</span><script>function createTime(time) {
+            let n = new Date(time);
+            now.setTime(now.getTime() + 250),
+                days = (now - n) / 1e3 / 60 / 60 / 24,
+                dnum = Math.floor(days),
+                hours = (now - n) / 1e3 / 60 / 60 - 24 * dnum,
+                hnum = Math.floor(hours),
+            1 == String(hnum).length && (hnum = "0" + hnum),
+                minutes = (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum,
+                mnum = Math.floor(minutes),
+            1 == String(mnum).length && (mnum = "0" + mnum),
+                seconds = (now - n) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,
+                snum = Math.round(seconds),
+            1 == String(snum).length && (snum = "0" + snum),
+                document.getElementById("statistic-times").innerHTML = "❤️本站自 <strong>"+time.split(" ")[0].replace(/\//g,".")+"</strong> 起已运行 <strong>" + dnum + "</strong> 天 <strong>" + hnum + "</strong> 小时 <strong>" + mnum + "</strong> 分 <strong>" + snum + "</strong> 秒！❤️";
+        }let now = new Date();setInterval("createTime('2019/09/01 00:00:00')", 250,"");</script><br></span><span id="busuanzi_container_site_uv">❤️感谢 <strong><span id="busuanzi_value_site_uv">0</span></strong> 小伙伴的 <strong><span id="busuanzi_value_site_pv">99+</span></strong> 次光临！❤️</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("zh-CN");</script><script>let IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="https://cdn.jsdelivr.net/npm/mermaid@8.0.0/dist/mermaid.min.js"></script><script>if (window.mermaid) {mermaid.initialize({theme: 'forest'});}</script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
