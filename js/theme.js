@@ -60,6 +60,8 @@ let isNight=isNightFun();
 // 参考自 https://www.imaegoo.com/
 let nightNav;
 let nightIcon;
+let navBarLogo = document.getElementsByClassName('navbar-logo');
+let footerLogo = document.getElementsByClassName('footer-logo');
 
 function applyNight(value) {
     if (value === 'true') {
@@ -67,11 +69,16 @@ function applyNight(value) {
         if (nightIcon) {
             nightIcon.className = nightIcon.className.replace(/ fa-moon/g, '') + ' fa-lightbulb'
         }
+        navBarLogo[0].querySelector('img').src='https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_02.png'
+        footerLogo[0].querySelector('img').src='https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_02.png'
     } else {
         document.body.className = document.body.className.replace(/ night/g, '')
         if (nightIcon) {
             nightIcon.className = nightIcon.className.replace(/ fa-lightbulb/g, '') + ' fa-moon'
         }
+        navBarLogo[0].querySelector('img').src='https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_01.png'
+        footerLogo[0].querySelector('img').src='https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/sunchaser/sunchaser_logo_01.png'
+
     }
 }
 
