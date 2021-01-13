@@ -11730,6 +11730,15 @@ figure.highlight .section {
     align-self: flex-start;
   }
 }
+@media screen and (min-width: 769px), print {
+  .has-navbar-fixed-top .column-main.is-sticky,
+  .has-navbar-fixed-top .column-left.is-sticky,
+  .has-navbar-fixed-top .column-right.is-sticky,
+  .has-navbar-fixed-top .column-right-shadow.is-sticky,
+  .has-navbar-fixed-top .widget.is-sticky {
+    top: 5.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .section {
     padding: 1.5rem 1rem;
