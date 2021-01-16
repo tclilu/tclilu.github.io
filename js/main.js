@@ -4,6 +4,8 @@
         window.location.href=$(this).data('post-url');
     });
 
+    console.log('只要我足够努力\n老板很快就能过上他想要的生活！\n该起床奋斗了！\n加油，打工人！\n\n\n\n星球、银河、宇宙、文学、梦想！');
+
     $('.article img:not(".not-gallery-item")').each(function() {
         // wrap images with link and add caption if possible
         if ($(this).parent('a').length === 0) {
