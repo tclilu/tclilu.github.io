@@ -26,7 +26,7 @@
         <input type="text" id="github-id" name="github-id" required  lay-verify="required" placeholder="请输入GitHub用户名" autocomplete="off" class="layui-input">
       </div>
       <button style="margin: 0 0 0 10px" class="layui-btn layui-btn-normal" onclick="get_github()">查看报告</button><br>
-      <button style="margin: 10px 0 0 0" class="layui-btn layui-btn-normal" onclick="window.location.href='http://lilu.org.cn'">回到首页</button><br>
+      <button style="margin: 10px 0 0 0" class="layui-btn layui-btn-normal" onclick="window.location.href='https://lilu.org.cn'">回到首页</button><br>
       <img style="max-width: 100%;margin: 10px 0 0 0;" id="github-annual-summary"/>
       <ins class="adsbygoogle" style="display:block;" data-full-width-responsive="true" data-ad-format="auto" data-ad-client="ca-pub-4923931760030983" data-ad-slot="8291512273"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({})</script>
       <h5>©2020 - 2021 By SunChaser</h5>
@@ -59,10 +59,10 @@
         $.ajax({
             type: "GET",
             timeout: 30000,
-            url: "//47.92.27.29:520/github?github_id=" + github_id,
+            url: "https://api.lilu.org.cn/github?github_id=" + github_id,
             dataType: "JSON",
             success: function(result) {
-                const str = '//47.92.27.29:520' + result.img_path.substring(1);
+                const str = 'https://api.lilu.org.cn' + result.img_path.substring(1);
                 layer.close(loadIndex);
                 img.css("width","100%");
                 img.css("height","100%");
