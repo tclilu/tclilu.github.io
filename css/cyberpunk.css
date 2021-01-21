@@ -11752,34 +11752,42 @@ figure.highlight .section {
     padding: 1.5rem 1rem;
   }
 }
+:root {
+  --bg: #181c27;
+  --main: #fff;
+  --t: #37475b;
+}
 .night {
-  color: #c0c0c0 !important;
-  background-color: #000;
+  color: #fff !important;
+  background: var(--bg) !important;
+}
+.night body {
+  background: #181c27;
 }
 .night .navbar-highlight {
-  background-color: #151313 !important;
+  background-color: var(--bg) !important;
 }
 .night .content blockquote {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .button.is-light {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .tag:not(body) {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night strong {
   color: #fff;
 }
 .night .time-axis-main .time-axis-achievement,
 .night .time-axis-main .time-axis-title {
-  background-color: #151313;
+  background-color: var(--bg);
   color: #fff;
 }
 .night .pagination .pagination-link:not(.is-current),
 .night .pagination .pagination-previous,
 .night .pagination .pagination-next {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .button.is-white {
   color: #fff;
@@ -11791,7 +11799,7 @@ figure.highlight .section {
   color: #fff;
 }
 .night hr {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .menu-list a:hover {
   background-color: #7a7a7a;
@@ -11806,8 +11814,11 @@ figure.highlight .section {
 .night .level .is-rounded:hover {
   color: #fff !important;
 }
+.night .level .level-item.is-marginless {
+  color: #fff !important;
+}
 .night .level .level-item.is-marginless:hover {
-  background-color: #151313;
+  background-color: var(--bg);
   color: #3273dc;
 }
 .night .level .level-item.is-link:hover {
@@ -11817,7 +11828,7 @@ figure.highlight .section {
   color: #3273dc;
 }
 .night .post-copyright {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night #back-to-top:hover {
   color: #3273dc;
@@ -11865,7 +11876,7 @@ figure.highlight .section {
   color: #c0c0c0;
 }
 .night .title {
-  color: #c0c0c0;
+  color: #fff !important;
 }
 .night .level-item.tag.is-danger {
   background-color: #3273dc !important;
@@ -11875,28 +11886,28 @@ figure.highlight .section {
   color: #c0c0c0;
 }
 .night .music-container #musiclist {
-  background: #151313;
+  background: var(--bg);
 }
 .night .meplayer-container {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .navbar {
-  background-color: #151313;
+  background-color: #252d38 !important;
 }
 .night .card {
-  background-color: #151313;
+  background-color: #252d38 !important;
 }
 .night .footer {
-  background-color: #151313;
+  background-color: var(--bg) !important;
 }
 .night .button.is-white {
-  background-color: #151313;
+  background-color: var(--bg) !important;
 }
 .night .cardm {
-  background-color: #151313;
+  background-color: var(--bg) !important;
 }
 .night .waifu-tips {
-  background-color: #151313;
+  background-color: var(--bg) !important;
   color: #c0c0c0;
 }
 .night .has-link-grey.-link:hover {
@@ -11906,7 +11917,7 @@ figure.highlight .section {
   color: #3273dc !important;
 }
 .night .timeline .media:last-child:after {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .level-item.tag.is-danger,
 .night .button:not(.is-white),
@@ -11971,7 +11982,7 @@ figure.highlight .section {
   box-shadow: 0 0.625em 3.75em 0 #000;
 }
 .night textarea {
-  background-color: #151313;
+  background-color: var(--bg);
   color: #fff;
 }
 .night .gt-container .gt-header-textarea:hover {
@@ -11981,11 +11992,11 @@ figure.highlight .section {
   background-color: #000;
 }
 .night .ins-section-container {
-  background-color: #151313;
+  background-color: var(--bg);
   color: #c0c0c0;
 }
 .night .searchbox .searchbox-input-wrapper .searchbox-input {
-  background-color: #151313;
+  background-color: var(--bg);
 }
 .night .cardm {
   color: unset;
@@ -12103,6 +12114,10 @@ figure.highlight .section {
 .night footer.footer,
 .night .card {
   background-color: rgba(21,19,19,0.678);
+}
+.night article.article .content,
+.night .card-content {
+  color: #fff !important;
 }
 body {
   counter-reset: card;
