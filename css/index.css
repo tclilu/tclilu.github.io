@@ -2897,7 +2897,7 @@ blockquote footer cite:before {
   #aside-content .sticky_layout {
     position: sticky;
     position: -webkit-sticky;
-    top: 20px;
+    top: 80px;
   }
 }
 #aside-content .card-tag-cloud a {
