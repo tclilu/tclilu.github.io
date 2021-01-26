@@ -11,7 +11,7 @@ $(function () { //获取处理友链数据
         $.each(data, function (i, e) {
             let html = "<div class='friend-card-item'>";
             if (e.src === undefined) {
-                html += "    <img class='ava' src='/img/links/nopic.jpg' alt='友链头像' title='图片链接不可用，使用的默认图片'>";
+                html += "    <img class='ava' src='https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/lilu.org.cn/avatar.png' alt='友链头像' title='图片链接不可用，使用的默认图片'>";
             } else {
                 html += "    <img class='ava' src='" + e.src + "'>";
             }
