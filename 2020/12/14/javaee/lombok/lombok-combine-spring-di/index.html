@@ -341,7 +341,7 @@ if ('Valine' === 'Valine' || !true) {
       if (false) {
         serverURL = ''
       } else {
-        serverURL = 'https://qc8Hd8UP.api.lncldglobal.com'
+        serverURL = 'https://qc8Hd8UP.lc-cn-n1-shared.com'
       }
 
     var settings = {
@@ -366,7 +366,7 @@ if ('Valine' === 'Valine' || !true) {
             'date': e.createdAt,
           }
         })
-        saveToLocal.set('leancloud-newest-comments', JSON.stringify(valineArray), 10/(60*24))
+        saveToLocal.set('leancloud-newest-comments', JSON.stringify(valineArray), 5/(60*24))
         generateHtml(valineArray)
       }).catch(e => {
         const $dom = document.querySelector('#card-newest-comments .aside-list')
