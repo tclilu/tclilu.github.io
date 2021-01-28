@@ -353,7 +353,7 @@ if ('Valine' === 'Valine' || !true) {
       },
     }
 
-    fetch(`${serverURL}/1.1/classes/Comment?limit=6&order=-createdAt`,settings)
+    fetch(`${serverURL}/1.1/classes/Comment?limit=5&order=-createdAt`,settings)
       .then(response => response.json())
       .then(data => {
         const valineArray = data.results.map(function (e) {
