@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lilu.org.cn/tags/index.html</loc>
-    
-    <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/categories/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
@@ -37,6 +30,20 @@
   </url>
   
   <url>
+    <loc>https://lilu.org.cn/tags/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/books/pdf/the-road-to-code-improvement-from-code-farmers-to-craftsmen/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/github/annual/summary/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
@@ -58,20 +65,6 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/books/pdf/the-road-to-code-improvement-from-code-farmers-to-craftsmen/index.html</loc>
-    
-    <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
-    
-    <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/about/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
@@ -87,6 +80,13 @@
   
   <url>
     <loc>https://lilu.org.cn/album/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
     
     <lastmod>2021-01-29</lastmod>
     
