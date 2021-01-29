@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lilu.org.cn/categories/index.html</loc>
-    
-    <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/friend/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
@@ -38,6 +31,20 @@
   
   <url>
     <loc>https://lilu.org.cn/github/annual/summary/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/books/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/categories/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
     
@@ -548,14 +555,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</loc>
+    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</loc>
     
     <lastmod>2019-12-11</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</loc>
+    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</loc>
     
     <lastmod>2019-12-11</lastmod>
     

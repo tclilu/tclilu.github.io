@@ -67,5 +67,5 @@ https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-
 https://lilu.org.cn/2019/12/12/design-patterns/gof/behavior/strategy/
 https://lilu.org.cn/2019/12/12/middleware/sharding-sphere/sharding-jdbc-introduction/
 https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-II-Functional-Data-Processing/
-https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/
 https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/
+https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/
