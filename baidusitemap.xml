@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
-    <lastmod>2021-01-28</lastmod>
+    <lastmod>2021-01-29</lastmod>
   </url>
   <url>
     <loc>https://lilu.org.cn/2021/01/03/algorithm/leetcode/tag/linkedlist/palindrome-linked-list/</loc>
@@ -277,11 +277,11 @@
     <lastmod>2019-12-11</lastmod>
   </url>
   <url>
-    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</loc>
+    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>
   <url>
-    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(4)/</loc>
+    <loc>https://lilu.org.cn/2019/12/12/reading-notes/java8-in-action/Part-III-Efficient-Java8-Programming(3)/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>
 </urlset> 
