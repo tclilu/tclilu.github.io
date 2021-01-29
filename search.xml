@@ -1436,6 +1436,31 @@
     
     
     <entry>
+      <title>Windows 10下Maven安装及配置</title>
+      <link href="2020/02/07/installed/install-maven/"/>
+      <url>2020/02/07/installed/install-maven/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>可从 <a href="http://maven.apache.org/download.cgi/">Maven官网</a> 下载<code>Binary zip archive</code>最新压缩包。</p><p>这里我提供 <a href="https://pan.baidu.com/s/1QMUbAxNFTKTPwktK1-v1qg">百度云盘</a> 供大家下载，提取码：<code>olx2</code>。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>maven</code>为绿色安装，下载完成后解压至自定义目录即可。</p><p>注意：解压路径不要包含中文。</p><h2 id="安装文件简介"><a href="#安装文件简介" class="headerlink" title="安装文件简介"></a>安装文件简介</h2><p>解压目录包含<code>4</code>个文件夹<code>bin/boot/conf/lib</code>，其存放的文件分别为：</p><ul><li><code>bin</code>：<code>maven</code>的一些可执行程序。</li><li><code>boot</code>：一些启动引导程序，例如类加载器等。</li><li><code>conf</code>：配置文件。</li><li><code>lib</code>：<code>maven</code>自身运行依赖的库。</li></ul><h2 id="配置maven"><a href="#配置maven" class="headerlink" title="配置maven"></a>配置<code>maven</code></h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>右击我的电脑-&gt;属性-&gt;高级系统设置-&gt;高级-&gt;环境变量</p><p>在系统变量处点击新建，输入变量名：<code>MAVEN_HOME</code>，变量值上述<code>maven</code>的解压目录，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/Trs4I5pO7ZhlxQk.png" alt="maven_home.png"></p><p>选中系统<code>Path</code>变量，点击编辑-&gt;新建，输入<code>%MAVEN_HOME%\bin\</code>，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/pmsHLowja4OdWDu.png" alt="maven_home_path.png"><br><img src="https://i.loli.net/2020/02/15/NcxXsZK68laoOfm.png" alt="maven_home_path_bin.png"></p><p>最后一直确定下去至窗口关闭即可。</p><p>按下<code>win+R</code>键，输入<code>cmd</code>，回车，输入命令<code>mvn -v</code>，出现下图所示内容即表示配置成功。</p><p><img src="https://i.loli.net/2020/02/15/meD3iLrZOnCNpyz.png" alt="mvn_v.png"></p><h3 id="配置本地仓库"><a href="#配置本地仓库" class="headerlink" title="配置本地仓库"></a>配置本地仓库</h3><p>新建一个自定义目录<code>repository</code>作为本地仓库，一般和<code>Maven</code>的解压目录在同级。</p><p>然后在<code>Maven</code>的安装目录下找到<code>conf</code>目录下的<code>settings.xml</code>配置文件，用文本编辑器打开，找到大概第<code>55</code>行的位置，输入以下标签指定本地仓库的位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;E:\develop\maven\repository&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/15/nAo7qkhJQZgEOjy.png" alt="local_repository.png"></p><p>根据个人安装位置输入仓库路径。</p><h3 id="配置阿里云镜像仓库"><a href="#配置阿里云镜像仓库" class="headerlink" title="配置阿里云镜像仓库"></a>配置阿里云镜像仓库</h3><p><img src="https://i.loli.net/2020/02/15/81W7sY9LOk5T6XD.jpg" alt="aliyun_mirror.png"></p><p>在<code>settings.xml</code>文件大约<code>160</code>行的地方，输入以下内容配置阿里云<code>Maven</code>镜像：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这个是配置阿里Maven镜像 --&gt;</span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;http:&#x2F;&#x2F;maven.aliyun.com&#x2F;nexus&#x2F;content&#x2F;groups&#x2F;public&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，<code>Maven</code>的配置就完成了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安装配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maven </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows 10下Node.js安装与配置</title>
       <link href="2020/02/07/installed/install-nodejs/"/>
       <url>2020/02/07/installed/install-nodejs/</url>
@@ -1478,31 +1503,6 @@
         <tags>
             
             <tag> Windows10 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows 10下Maven安装及配置</title>
-      <link href="2020/02/07/installed/install-maven/"/>
-      <url>2020/02/07/installed/install-maven/</url>
-      
-        <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>可从 <a href="http://maven.apache.org/download.cgi/">Maven官网</a> 下载<code>Binary zip archive</code>最新压缩包。</p><p>这里我提供 <a href="https://pan.baidu.com/s/1QMUbAxNFTKTPwktK1-v1qg">百度云盘</a> 供大家下载，提取码：<code>olx2</code>。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>maven</code>为绿色安装，下载完成后解压至自定义目录即可。</p><p>注意：解压路径不要包含中文。</p><h2 id="安装文件简介"><a href="#安装文件简介" class="headerlink" title="安装文件简介"></a>安装文件简介</h2><p>解压目录包含<code>4</code>个文件夹<code>bin/boot/conf/lib</code>，其存放的文件分别为：</p><ul><li><code>bin</code>：<code>maven</code>的一些可执行程序。</li><li><code>boot</code>：一些启动引导程序，例如类加载器等。</li><li><code>conf</code>：配置文件。</li><li><code>lib</code>：<code>maven</code>自身运行依赖的库。</li></ul><h2 id="配置maven"><a href="#配置maven" class="headerlink" title="配置maven"></a>配置<code>maven</code></h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>右击我的电脑-&gt;属性-&gt;高级系统设置-&gt;高级-&gt;环境变量</p><p>在系统变量处点击新建，输入变量名：<code>MAVEN_HOME</code>，变量值上述<code>maven</code>的解压目录，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/Trs4I5pO7ZhlxQk.png" alt="maven_home.png"></p><p>选中系统<code>Path</code>变量，点击编辑-&gt;新建，输入<code>%MAVEN_HOME%\bin\</code>，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/pmsHLowja4OdWDu.png" alt="maven_home_path.png"><br><img src="https://i.loli.net/2020/02/15/NcxXsZK68laoOfm.png" alt="maven_home_path_bin.png"></p><p>最后一直确定下去至窗口关闭即可。</p><p>按下<code>win+R</code>键，输入<code>cmd</code>，回车，输入命令<code>mvn -v</code>，出现下图所示内容即表示配置成功。</p><p><img src="https://i.loli.net/2020/02/15/meD3iLrZOnCNpyz.png" alt="mvn_v.png"></p><h3 id="配置本地仓库"><a href="#配置本地仓库" class="headerlink" title="配置本地仓库"></a>配置本地仓库</h3><p>新建一个自定义目录<code>repository</code>作为本地仓库，一般和<code>Maven</code>的解压目录在同级。</p><p>然后在<code>Maven</code>的安装目录下找到<code>conf</code>目录下的<code>settings.xml</code>配置文件，用文本编辑器打开，找到大概第<code>55</code>行的位置，输入以下标签指定本地仓库的位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;E:\develop\maven\repository&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/15/nAo7qkhJQZgEOjy.png" alt="local_repository.png"></p><p>根据个人安装位置输入仓库路径。</p><h3 id="配置阿里云镜像仓库"><a href="#配置阿里云镜像仓库" class="headerlink" title="配置阿里云镜像仓库"></a>配置阿里云镜像仓库</h3><p><img src="https://i.loli.net/2020/02/15/81W7sY9LOk5T6XD.jpg" alt="aliyun_mirror.png"></p><p>在<code>settings.xml</code>文件大约<code>160</code>行的地方，输入以下内容配置阿里云<code>Maven</code>镜像：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这个是配置阿里Maven镜像 --&gt;</span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;http:&#x2F;&#x2F;maven.aliyun.com&#x2F;nexus&#x2F;content&#x2F;groups&#x2F;public&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，<code>Maven</code>的配置就完成了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 安装配置 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Maven </tag>
             
         </tags>
       

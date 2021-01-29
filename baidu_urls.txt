@@ -52,9 +52,9 @@ https://lilu.org.cn/2020/02/13/middleware/xxl-job/demo-executor-xxljobconfig-sou
 https://lilu.org.cn/2020/02/07/installed/install-git/
 https://lilu.org.cn/2020/02/07/installed/install-idea/
 https://lilu.org.cn/2020/02/07/installed/install-jdk/
+https://lilu.org.cn/2020/02/07/installed/install-maven/
 https://lilu.org.cn/2020/02/07/installed/install-nodejs/
 https://lilu.org.cn/2020/02/07/installed/install-windows10/
-https://lilu.org.cn/2020/02/07/installed/install-maven/
 https://lilu.org.cn/2020/01/09/javase/base/why-char-cannot-be-converted-to-byte-or-short/
 https://lilu.org.cn/2020/01/09/javase/base/method-overload/
 https://lilu.org.cn/2019/12/31/annual-summary/2019/

@@ -51,21 +51,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/books/code/index.html</loc>
+    <loc>https://lilu.org.cn/books/categories/code/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/books/pdf/1.html</loc>
-    
-    <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
+    <loc>https://lilu.org.cn/books/pdf/the-road-to-code-improvement-from-code-farmers-to-craftsmen/index.html</loc>
     
     <lastmod>2021-01-29</lastmod>
     
@@ -87,6 +80,13 @@
   
   <url>
     <loc>https://lilu.org.cn/album/index.html</loc>
+    
+    <lastmod>2021-01-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
     
     <lastmod>2021-01-29</lastmod>
     
@@ -464,6 +464,13 @@
   </url>
   
   <url>
+    <loc>https://lilu.org.cn/2020/02/07/installed/install-maven/</loc>
+    
+    <lastmod>2020-02-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/2020/02/07/installed/install-nodejs/</loc>
     
     <lastmod>2020-02-06</lastmod>
@@ -472,13 +479,6 @@
   
   <url>
     <loc>https://lilu.org.cn/2020/02/07/installed/install-windows10/</loc>
-    
-    <lastmod>2020-02-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/2020/02/07/installed/install-maven/</loc>
     
     <lastmod>2020-02-06</lastmod>
     
@@ -620,6 +620,13 @@
   </url>
   
   <url>
+    <loc>https://lilu.org.cn/tags/Maven/</loc>
+    <lastmod>2021-01-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/tags/Node-js/</loc>
     <lastmod>2021-01-29</lastmod>
     <changefreq>daily</changefreq>
@@ -663,13 +670,6 @@
   
   <url>
     <loc>https://lilu.org.cn/tags/Lombok/</loc>
-    <lastmod>2021-01-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/tags/Maven/</loc>
     <lastmod>2021-01-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lilu.org.cn/"/>
-  <updated>2021-01-29T13:39:52.545Z</updated>
+  <updated>2021-01-29T13:52:53.955Z</updated>
   <id>https://lilu.org.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/"/>
     <id>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</id>
     <published>2021-01-28T19:13:01.000Z</published>
-    <updated>2021-01-29T13:39:52.545Z</updated>
+    <updated>2021-01-29T13:52:53.955Z</updated>
     
     <content type="html"><![CDATA[<p><code>Spring Cloud</code>是一系列微服务解决方案的组合套件。它包含分布式配置中心、服务注册与发现、路由、服务调用、负载均衡、断路器、全局锁、领导选举/集群状态和分布式消息等组件。利用这些组件，我们可以快速地构建出一个分布式系统。</p><h2 id="Spring-Boot版本介绍"><a href="#Spring-Boot版本介绍" class="headerlink" title="Spring Boot版本介绍"></a><code>Spring Boot</code>版本介绍</h2><p>由于<code>Spring Cloud</code>是基于<code>Spring Boot</code>进行构建的，所以在介绍<code>Spring Cloud</code>的版本之前，我们先来看下<code>Spring Boot</code>的版本。</p><p>官网链接：<a href="https://spring.io/projects/spring-boot#learn"><code>https://spring.io/projects/spring-boot#learn</code></a></p><p><code>Spring Boot</code>版本号遵循<code>主版本号.次版本号.增量版本号.里程碑版本号</code>方案：</p><ul><li>主版本号：项目有可能进行重大重构，各主版本之间不一定能兼容。</li><li>次版本号：在主版本架构不变的情况下，加入新特性，保证兼容。</li><li>增量版本号：<code>BUG</code>的修复。</li><li>里程碑版本号：当前的发布版本，主要有以下几类：<ul><li><code>BUILD-SNAPSHOT</code>：开发快照版。</li><li><code>M</code>：<code>Milestone</code>的缩写，里程碑版本。该版本较之前版本在功能上有重大更新，是发布稳定版本的前兆。如<code>M1</code>/<code>M2</code>。</li><li><code>PRE</code>：预览版。不建议使用，可能存在未知<code>BUG</code>。</li><li><code>SNAPSHOT</code>：快照版。可稳定使用，但仍在继续改进功能。</li><li><code>RC</code>：<code>Release Candidate</code>的缩写。候选发布版本。此版本已相当成熟，基本不存在<code>BUG</code>。如<code>RC1</code>/<code>RC2</code>。</li><li><code>RELEASE</code>：最终发行版本。稳定正式版本。</li><li><code>GA</code>：<code>General Availability</code>，正式版本，官方推荐使用此版本。在国外是用<code>GA</code>来标识<code>RELEASE</code>版本。</li></ul></li></ul><p><code>Spring Boot</code>项目所有版本索引地址：<a href="https://docs.spring.io/spring-boot/docs/"><code>https://docs.spring.io/spring-boot/docs/</code></a></p><h2 id="Spring-Cloud版本介绍"><a href="#Spring-Cloud版本介绍" class="headerlink" title="Spring Cloud版本介绍"></a><code>Spring Cloud</code>版本介绍</h2><p>官网链接：<a href="https://spring.io/projects/spring-cloud#learn"><code>https://spring.io/projects/spring-cloud#learn</code></a></p><p>不同于<code>Spring Boot</code>及其它<code>Spring</code>项目的版本命名方式，<code>Spring Cloud</code>项目的版本是根据英国伦敦地铁站的英文名称并按照字母<code>A-Z</code>的顺序进行控制的，例如：<code>A（Angel）</code>、<code>B（Brixton）</code>、<code>C（Camden）</code>、<code>D（Dalston）</code>、<code>E（Edgware）</code>、<code>F（Finchley）</code>、<code>G（Greenwich）</code>和<code>H（Hoxton）</code>等。直到<code>2020</code>年<code>4</code>月<code>16</code>日，<code>Spring Cloud 2020.0.0-M1</code>版本发布，从该版本开始，发布至<code>Maven</code>仓库的版本号将不再使用英国伦敦地铁站方式命名，而是改为全新的“日历化”版本命名方式。</p><blockquote><p>官宣博客：<a href="https://spring.io/blog/2020/04/17/spring-cloud-2020-0-0-m1-released"><code>https://spring.io/blog/2020/04/17/spring-cloud-2020-0-0-m1-released</code></a></p></blockquote><h2 id="“日历化”版本命名方式"><a href="#“日历化”版本命名方式" class="headerlink" title="“日历化”版本命名方式"></a>“日历化”版本命名方式</h2><p>“日历化”版本命名遵循<code>YYYY.MINOR.MICRO</code>方案：</p><ul><li><code>YYYY</code>：代表四位年份。</li><li><code>MINOR</code>：代表一个递增的数字，每年从<code>0</code>开始递增。</li><li><code>MICRO</code>：代表先前使用的版本号后缀，例如<code>.0</code>类似于<code>.RELEASE</code>，<code>.2</code>类似于<code>.SR2</code>。</li></ul><p>预发布版本的后缀分隔符从<code>.</code>变更为<code>-</code>，例如<code>2020.0.0-M1</code>和<code>2020.0.0-RC2</code>；同时快照版本将不再添加<code>BUILD-</code>前缀，例如<code>2020.0.0-SNAPSHOT</code>。</p><p>在<code>Spring Cloud</code>项目中出现了新的里程碑版本号：<code>SR</code>：<code>Service Release</code>的缩写，表示修正版。修正了正式版本推出后发现的<code>BUG</code>。如<code>SR1</code>/<code>SR2</code>。</p><blockquote><p>虽然发布至<code>Maven</code>仓库的版本命名方式发生了变更，但<code>Spring Cloud</code>项目仍然使用英国伦敦地铁站命名方式作为代码名称。当前为<code>Ilford</code>。</p></blockquote><h2 id="如何选择合适的版本"><a href="#如何选择合适的版本" class="headerlink" title="如何选择合适的版本"></a>如何选择合适的版本</h2><p><code>Spring Cloud</code>是基于<code>Spring Boot</code>进行构建的，两者的版本必须相匹配，我们可以参考官网的版本映射。</p><p>官网链接：<a href="https://spring.io/projects/spring-cloud"><code>https://spring.io/projects/spring-cloud</code></a></p><p>下面列出大版本号的对应选择：</p><table><thead><tr><th><code>Release Train</code></th><th><code>Boot Version</code></th></tr></thead><tbody><tr><td><a href="https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2020.0-Release-Notes"><code>2020.0.x</code></a>  <code>aka Ilford</code></td><td><code>2.4.x</code></td></tr><tr><td><a href="https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-Hoxton-Release-Notes">Hoxton</a></td><td><code>2.2.x, 2.3.x (Starting with SR5)</code></td></tr><tr><td><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Greenwich-Release-Notes">Greenwich</a></td><td><code>2.1.x</code></td></tr><tr><td><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Finchley-Release-Notes">Finchley</a></td><td><code>2.0.x</code></td></tr><tr><td><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Edgware-Release-Notes">Edgware</a></td><td><code>1.5.x</code></td></tr><tr><td><a href="https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Dalston-Release-Notes">Dalston</a></td><td><code>1.5.x</code></td></tr></tbody></table><p>官方提供了一个<code>Actuator</code>端点返回了详细的各小版本号之间的对应关系。可根据自身需要进行更加细粒度的版本选择。</p><p>端点地址为：<a href="https://start.spring.io/actuator/info"><code>https://start.spring.io/actuator/info</code></a></p>]]></content>
     
@@ -1345,6 +1345,29 @@
   </entry>
   
   <entry>
+    <title>Windows 10下Maven安装及配置</title>
+    <link href="https://lilu.org.cn/2020/02/07/installed/install-maven/"/>
+    <id>https://lilu.org.cn/2020/02/07/installed/install-maven/</id>
+    <published>2020-02-06T16:00:00.000Z</published>
+    <updated>2020-02-06T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>可从 <a href="http://maven.apache.org/download.cgi/">Maven官网</a> 下载<code>Binary zip archive</code>最新压缩包。</p><p>这里我提供 <a href="https://pan.baidu.com/s/1QMUbAxNFTKTPwktK1-v1qg">百度云盘</a> 供大家下载，提取码：<code>olx2</code>。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>maven</code>为绿色安装，下载完成后解压至自定义目录即可。</p><p>注意：解压路径不要包含中文。</p><h2 id="安装文件简介"><a href="#安装文件简介" class="headerlink" title="安装文件简介"></a>安装文件简介</h2><p>解压目录包含<code>4</code>个文件夹<code>bin/boot/conf/lib</code>，其存放的文件分别为：</p><ul><li><code>bin</code>：<code>maven</code>的一些可执行程序。</li><li><code>boot</code>：一些启动引导程序，例如类加载器等。</li><li><code>conf</code>：配置文件。</li><li><code>lib</code>：<code>maven</code>自身运行依赖的库。</li></ul><h2 id="配置maven"><a href="#配置maven" class="headerlink" title="配置maven"></a>配置<code>maven</code></h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>右击我的电脑-&gt;属性-&gt;高级系统设置-&gt;高级-&gt;环境变量</p><p>在系统变量处点击新建，输入变量名：<code>MAVEN_HOME</code>，变量值上述<code>maven</code>的解压目录，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/Trs4I5pO7ZhlxQk.png" alt="maven_home.png"></p><p>选中系统<code>Path</code>变量，点击编辑-&gt;新建，输入<code>%MAVEN_HOME%\bin\</code>，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/pmsHLowja4OdWDu.png" alt="maven_home_path.png"><br><img src="https://i.loli.net/2020/02/15/NcxXsZK68laoOfm.png" alt="maven_home_path_bin.png"></p><p>最后一直确定下去至窗口关闭即可。</p><p>按下<code>win+R</code>键，输入<code>cmd</code>，回车，输入命令<code>mvn -v</code>，出现下图所示内容即表示配置成功。</p><p><img src="https://i.loli.net/2020/02/15/meD3iLrZOnCNpyz.png" alt="mvn_v.png"></p><h3 id="配置本地仓库"><a href="#配置本地仓库" class="headerlink" title="配置本地仓库"></a>配置本地仓库</h3><p>新建一个自定义目录<code>repository</code>作为本地仓库，一般和<code>Maven</code>的解压目录在同级。</p><p>然后在<code>Maven</code>的安装目录下找到<code>conf</code>目录下的<code>settings.xml</code>配置文件，用文本编辑器打开，找到大概第<code>55</code>行的位置，输入以下标签指定本地仓库的位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;E:\develop\maven\repository&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/15/nAo7qkhJQZgEOjy.png" alt="local_repository.png"></p><p>根据个人安装位置输入仓库路径。</p><h3 id="配置阿里云镜像仓库"><a href="#配置阿里云镜像仓库" class="headerlink" title="配置阿里云镜像仓库"></a>配置阿里云镜像仓库</h3><p><img src="https://i.loli.net/2020/02/15/81W7sY9LOk5T6XD.jpg" alt="aliyun_mirror.png"></p><p>在<code>settings.xml</code>文件大约<code>160</code>行的地方，输入以下内容配置阿里云<code>Maven</code>镜像：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这个是配置阿里Maven镜像 --&gt;</span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;http:&#x2F;&#x2F;maven.aliyun.com&#x2F;nexus&#x2F;content&#x2F;groups&#x2F;public&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，<code>Maven</code>的配置就完成了。</p>]]></content>
+    
+    <summary type="html">
+    
+      Windows 10下Maven安装及配置
+    
+    </summary>
+    
+    
+      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Maven" scheme="https://lilu.org.cn/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows 10下Node.js安装与配置</title>
     <link href="https://lilu.org.cn/2020/02/07/installed/install-nodejs/"/>
     <id>https://lilu.org.cn/2020/02/07/installed/install-nodejs/</id>
@@ -1387,29 +1410,6 @@
     
     
       <category term="Windows10" scheme="https://lilu.org.cn/tags/Windows10/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 10下Maven安装及配置</title>
-    <link href="https://lilu.org.cn/2020/02/07/installed/install-maven/"/>
-    <id>https://lilu.org.cn/2020/02/07/installed/install-maven/</id>
-    <published>2020-02-06T16:00:00.000Z</published>
-    <updated>2020-02-06T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>可从 <a href="http://maven.apache.org/download.cgi/">Maven官网</a> 下载<code>Binary zip archive</code>最新压缩包。</p><p>这里我提供 <a href="https://pan.baidu.com/s/1QMUbAxNFTKTPwktK1-v1qg">百度云盘</a> 供大家下载，提取码：<code>olx2</code>。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>maven</code>为绿色安装，下载完成后解压至自定义目录即可。</p><p>注意：解压路径不要包含中文。</p><h2 id="安装文件简介"><a href="#安装文件简介" class="headerlink" title="安装文件简介"></a>安装文件简介</h2><p>解压目录包含<code>4</code>个文件夹<code>bin/boot/conf/lib</code>，其存放的文件分别为：</p><ul><li><code>bin</code>：<code>maven</code>的一些可执行程序。</li><li><code>boot</code>：一些启动引导程序，例如类加载器等。</li><li><code>conf</code>：配置文件。</li><li><code>lib</code>：<code>maven</code>自身运行依赖的库。</li></ul><h2 id="配置maven"><a href="#配置maven" class="headerlink" title="配置maven"></a>配置<code>maven</code></h2><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>右击我的电脑-&gt;属性-&gt;高级系统设置-&gt;高级-&gt;环境变量</p><p>在系统变量处点击新建，输入变量名：<code>MAVEN_HOME</code>，变量值上述<code>maven</code>的解压目录，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/Trs4I5pO7ZhlxQk.png" alt="maven_home.png"></p><p>选中系统<code>Path</code>变量，点击编辑-&gt;新建，输入<code>%MAVEN_HOME%\bin\</code>，点击确定。</p><p><img src="https://i.loli.net/2020/02/15/pmsHLowja4OdWDu.png" alt="maven_home_path.png"><br><img src="https://i.loli.net/2020/02/15/NcxXsZK68laoOfm.png" alt="maven_home_path_bin.png"></p><p>最后一直确定下去至窗口关闭即可。</p><p>按下<code>win+R</code>键，输入<code>cmd</code>，回车，输入命令<code>mvn -v</code>，出现下图所示内容即表示配置成功。</p><p><img src="https://i.loli.net/2020/02/15/meD3iLrZOnCNpyz.png" alt="mvn_v.png"></p><h3 id="配置本地仓库"><a href="#配置本地仓库" class="headerlink" title="配置本地仓库"></a>配置本地仓库</h3><p>新建一个自定义目录<code>repository</code>作为本地仓库，一般和<code>Maven</code>的解压目录在同级。</p><p>然后在<code>Maven</code>的安装目录下找到<code>conf</code>目录下的<code>settings.xml</code>配置文件，用文本编辑器打开，找到大概第<code>55</code>行的位置，输入以下标签指定本地仓库的位置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;E:\develop\maven\repository&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/02/15/nAo7qkhJQZgEOjy.png" alt="local_repository.png"></p><p>根据个人安装位置输入仓库路径。</p><h3 id="配置阿里云镜像仓库"><a href="#配置阿里云镜像仓库" class="headerlink" title="配置阿里云镜像仓库"></a>配置阿里云镜像仓库</h3><p><img src="https://i.loli.net/2020/02/15/81W7sY9LOk5T6XD.jpg" alt="aliyun_mirror.png"></p><p>在<code>settings.xml</code>文件大约<code>160</code>行的地方，输入以下内容配置阿里云<code>Maven</code>镜像：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 这个是配置阿里Maven镜像 --&gt;</span><br><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;http:&#x2F;&#x2F;maven.aliyun.com&#x2F;nexus&#x2F;content&#x2F;groups&#x2F;public&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，<code>Maven</code>的配置就完成了。</p>]]></content>
-    
-    <summary type="html">
-    
-      Windows 10下Maven安装及配置
-    
-    </summary>
-    
-    
-      <category term="安装配置" scheme="https://lilu.org.cn/categories/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-    
-    
-      <category term="Maven" scheme="https://lilu.org.cn/tags/Maven/"/>
     
   </entry>
   
