@@ -1661,9 +1661,6 @@ img:not([src]) {
   width: 200px;
   max-width: 100%;
 }
-#footer {
-  background-color: transparent !important;
-}
 .friend-title-item {
   font-weight: bold;
   text-align: center;
