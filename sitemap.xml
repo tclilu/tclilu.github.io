@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lilu.org.cn/categories/index.html</loc>
-    
-    <lastmod>2021-01-31</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/link/index.html</loc>
     
     <lastmod>2021-01-31</lastmod>
@@ -23,14 +16,21 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/books/pdf/the-road-to-code-improvement-from-code-farmers-to-craftsmen/index.html</loc>
+    <loc>https://lilu.org.cn/github/annual/summary/index.html</loc>
     
     <lastmod>2021-01-31</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/github/annual/summary/index.html</loc>
+    <loc>https://lilu.org.cn/categories/index.html</loc>
+    
+    <lastmod>2021-01-31</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/books/pdf/the-road-to-code-improvement-from-code-farmers-to-craftsmen/index.html</loc>
     
     <lastmod>2021-01-31</lastmod>
     
