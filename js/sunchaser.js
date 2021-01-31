@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    NProgress.start();
     // 导航栏夜间模式切换事件
     document.getElementById('darkmode').addEventListener('click', function (e) {
         const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
@@ -16,4 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         typeof FB === 'object' && window.loadFBComment();
         window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200);
     });
+});
+
+window.addEventListener('load', function (event) {
+    NProgress.done();
 });

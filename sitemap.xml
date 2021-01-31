@@ -797,20 +797,6 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/GOF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/categories/Java-EE/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
@@ -825,7 +811,14 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/Java-EE/Lombok/</loc>
+    <loc>https://lilu.org.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/GOF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -833,6 +826,13 @@
   
   <url>
     <loc>https://lilu.org.cn/categories/Java-SE/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/categories/Java-EE/Lombok/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -909,13 +909,6 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BA%91%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/categories/%E8%BF%90%E7%BB%B4/Docker/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
@@ -945,6 +938,13 @@
   
   <url>
     <loc>https://lilu.org.cn/categories/%E7%AE%97%E6%B3%95/LeetCode/%E9%93%BE%E8%A1%A8/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BA%91%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

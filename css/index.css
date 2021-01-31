@@ -2129,6 +2129,14 @@ div#swiper_container {
     height: 200px;
   }
 }
+#nprogress .bar {
+  height: 0.2em !important;
+  background: #8b42ff !important;
+}
+#nprogress .spinner-icon {
+  border-top-color: #fff !important;
+  border-left-color: #fff !important;
+}
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #121212;
 }
