@@ -1,5 +1,6 @@
+// 友情链接
 $(function () { //获取处理友链数据
-    $.getJSON("../json_data/friend.json", function (data) {
+    $.getJSON("../json/friends.json", function (data) {
         let $links = $('.links-content');
         $links.html("");
         // 随机排序过滤失效的

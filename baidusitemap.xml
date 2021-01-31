@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
-    <lastmod>2021-01-29</lastmod>
+    <lastmod>2021-01-31</lastmod>
+  </url>
+  <url>
+    <loc>https://lilu.org.cn/2021/01/31/butterfly/</loc>
+    <lastmod>2021-01-30</lastmod>
   </url>
   <url>
     <loc>https://lilu.org.cn/2021/01/03/algorithm/leetcode/tag/linkedlist/palindrome-linked-list/</loc>
