@@ -17,10 +17,12 @@ var swiper = new Swiper('.blog-slider', {
 });
 
 var container = document.getElementById('swiper_container');
-container.onmouseenter = function() {
-    swiper.autoplay.stop();
-};
-container.onmouseleave = function() {
-    swiper.autoplay.start();
-};
+if (container !== null && container !== undefined) {
+    container.onmouseenter = function () {
+        swiper.autoplay.stop();
+    };
+    container.onmouseleave = function () {
+        swiper.autoplay.start();
+    };
+}
 // 首页轮播图结束
