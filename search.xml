@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>🌥️SpringCloud实战-服务注册中心之Eureka</title>
+      <title>🌥️SpringCloud实战-服务注册中心之Eureka Server</title>
       <link href="2021/02/04/microservice/springcloud/netflix/eureka-server/"/>
       <url>2021/02/04/microservice/springcloud/netflix/eureka-server/</url>
       
@@ -24,7 +24,7 @@
             
             <tag> Spring Cloud </tag>
             
-            <tag> Eureka </tag>
+            <tag> Eureka Server </tag>
             
             <tag> 注册中心 </tag>
             
