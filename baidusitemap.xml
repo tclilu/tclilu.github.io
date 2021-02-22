@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
-    <lastmod>2021-02-07</lastmod>
+    <lastmod>2021-02-22</lastmod>
   </url>
   <url>
     <loc>https://lilu.org.cn/2021/02/04/microservice/springcloud/netflix/eureka-client/</loc>
-    <lastmod>2021-02-06</lastmod>
+    <lastmod>2021-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://lilu.org.cn/2021/02/22/microservice/springcloud/netflix/ribbon/</loc>
+    <lastmod>2021-02-21</lastmod>
   </url>
   <url>
     <loc>https://lilu.org.cn/2021/02/04/microservice/springcloud/netflix/eureka-server/</loc>
