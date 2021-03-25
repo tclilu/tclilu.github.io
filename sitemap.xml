@@ -51,13 +51,6 @@
   </url>
   
   <url>
-    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
-    
-    <lastmod>2021-03-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lilu.org.cn/about/index.html</loc>
     
     <lastmod>2021-03-25</lastmod>
@@ -66,6 +59,20 @@
   
   <url>
     <loc>https://lilu.org.cn/adsense/index.html</loc>
+    
+    <lastmod>2021-03-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2021/01/29/microservice/springcloud/spring-cloud-version-overview/</loc>
+    
+    <lastmod>2021-03-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/2021/03/26/microservice/dubbo/dubbo-basic-env-prepare/</loc>
     
     <lastmod>2021-03-25</lastmod>
     
@@ -88,7 +95,7 @@
   <url>
     <loc>https://lilu.org.cn/2021/03/25/ops/docker/docker-compose/zk/</loc>
     
-    <lastmod>2021-03-24</lastmod>
+    <lastmod>2021-03-25</lastmod>
     
   </url>
   
@@ -760,6 +767,13 @@
   </url>
   
   <url>
+    <loc>https://lilu.org.cn/tags/Dubbo/</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lilu.org.cn/tags/Spring-Cloud/</loc>
     <lastmod>2021-03-25</lastmod>
     <changefreq>daily</changefreq>
@@ -987,6 +1001,13 @@
   
   <url>
     <loc>https://lilu.org.cn/categories/JVM/</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lilu.org.cn/categories/Dubbo/</loc>
     <lastmod>2021-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

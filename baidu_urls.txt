@@ -1,3 +1,4 @@
+https://lilu.org.cn/2021/03/26/microservice/dubbo/dubbo-basic-env-prepare/
 https://lilu.org.cn/2021/03/26/ops/docker/build-dubbo-admin-docker-image/
 https://lilu.org.cn/2021/03/26/ops/docker/docker-compose/dubbo-admin/
 https://lilu.org.cn/2021/03/25/ops/docker/docker-compose/zk/
